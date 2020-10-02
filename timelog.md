@@ -1,9 +1,9 @@
 # Timelog
 
-* PROJECT NAME
-* YOUR NAME
-* STUDENT_ID
-* SUPERVISOR NAME
+* A Serious Historical Game
+* Ivo de Vero
+* 2310555D
+* Matt Barr
 
 ## Guidance
 
@@ -14,13 +14,18 @@
 
 ## Week 1
 
-### 19 Oct 2019
+### 22 Sep 2020
 
-* *4 hours* Read the project guidance notes
-* *0.5 hour* Created GitLab repository and cloned the cookiecutter for the projects
-* *1 hour* Modified dissertation template, compiled  
+* *1 hour* watched the pre-recorded intro lecture and read through the guidance slides
+* *4 hours* attended introductory lectures by Dr McDonald
+* *1 hour* thought about questions to ask Dr Barr in meeting
 
-## 20 Oct 2019
+### 24 Sep 2020
+* *0.5 hour* meeting with supervisor 
+* *0.5 hour* reflecting and updating google doc
 
-* *1 hour* meeting with supervisor
-* *2 hours* writing initial version of test harness
+### 25 Sep 2020
+* *0.5 hour* setting up Zotero collection + syncing
+* *3.5 hours* reading 
+* *0.5 hour* firefighting administrative issues 
+* *0.5 hour* re-reading guidance slides, downloading example template
