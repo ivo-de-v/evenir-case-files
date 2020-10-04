@@ -1,9 +1,9 @@
 # Timelog
 
-* A Serious Historical Game
-* Ivo de Vero
-* 2310555D
-* Matt Barr
+* Project Title: A Serious Historical Game
+* Student Name: Ivo de Vero
+* Student ID: 2310555D
+* Supervisor: Matt Barr
 
 ## Guidance
 
@@ -29,3 +29,17 @@
 * *3.5 hours* reading 
 * *0.5 hour* firefighting administrative issues 
 * *0.5 hour* re-reading guidance slides, downloading example template
+
+## Week 2
+
+### 2 Oct 2020
+* *1.5 hour* admin work - transcribing last week's meeting, setting up github repo and VSCode on a new machine, updating the timelog
+* *1.5 hour* reading 
+* *1 hour* meeting with Dr Clark to talk about leaning on her course for my evaluation 
+
+### 3 Oct 2020
+* *1 hour* reading
+* *1 hour* planning - looking at the course handbook, adding material to Zotero
+
+### 4 Oct 2020
+* *1.5 hour* brainstorming game ideas - content and structure
