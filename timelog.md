@@ -43,3 +43,14 @@
 
 ### 4 Oct 2020
 * *1.5 hour* brainstorming game ideas - content and structure
+
+## Week 3
+
+### 7 October 2020
+* *1 hour* attending supervisor meeting and admin
+
+### 10 October 2020
+* *1 hour* reading Levy on counterfactuals
+* *1 hour* reading Mueller, checking out google scholar for more relevant papers
+
+* *some time* not sure what kind of content I could create for the game, not sure if counterfactuals is the best kind of topic for the game 
