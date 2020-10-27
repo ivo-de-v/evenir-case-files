@@ -53,4 +53,35 @@
 * *1 hour* reading Levy on counterfactuals
 * *1 hour* reading Mueller, checking out google scholar for more relevant papers
 
-* *some time* not sure what kind of content I could create for the game, not sure if counterfactuals is the best kind of topic for the game 
+* *some time* not sure what kind of content I could create for the game, not sure if counterfactuals is the best kind of topic for the game
+
+## Week 4
+
+### 14 Oct 2020
+* *0.5 hour* reviewing literature and thinking about the problem of the game's content
+
+### 16 Oct 2020
+* *1 hour* thinking about the problem of game content, looking at old course handbooks and reviewing literature
+* *1 hour* reading
+* *0.5* hours meeting with Dr Barr
+* *0.5* hours adding stuff to Zotero
+
+## Week 5
+
+### 20 Oct 2020
+* *0.5 hours* designing survey to gather requirements
+* *1.5 hours* reading salen & zimmerman
+
+### 21 Oct 2020
+* *1.5 hours* sending out requirements gathering questions
+* *2 hours* reading salen & zimmerman
+
+### 22 Oct 2020
+* *1 hour* reading salen & zimmerman
+
+### 23 Oct 2020
+* *0.5 hours* meeting with Dr Barr 
+
+
+
+
