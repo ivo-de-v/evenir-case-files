@@ -83,5 +83,38 @@
 * *0.5 hours* meeting with Dr Barr 
 
 
+## Week 6
+
+### 30 Oct 2020
+
+* *3.5 hours* developing content for the prototype
+* *0.5 hours* supervisor meeting
+
+## Week 7
+
+### 4 Nov 2020
+* *1.5 hour* reading Fullerton
+
+### 5 Nov 2020
+* *1.5 hour* reading Fullerton
+
+### 6 Nov 2020
+* *1.5 hour* reading Fullerton
+* *0.5 hour * supervisor meeting
+
+### 7 Nov 2020
+* *1 hour* messing about in Twine
+* *0.5 hour* reading Fullerton
+
+## Week 8
+* *1 hour* reviewing literature
+
+## Week 9
+
+### 20 Nov 2020
+* *2.5 hours* creating prototype
+* *0.5hour* supervisor meeting and admin
+
+
 
 
