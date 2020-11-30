@@ -115,6 +115,12 @@
 * *2.5 hours* creating prototype
 * *0.5hour* supervisor meeting and admin
 
+## Week 10
+### 28 Nov 2020
+* *0.5 hours* completing prototype
+* *2 hours* setting up and running an external evaluation
+### 29 Nov 2020
+* *1 hour* started react tutorial
 
 
 
