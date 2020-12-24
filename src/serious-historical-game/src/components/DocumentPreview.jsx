@@ -19,6 +19,7 @@ class DocumentPreview extends Component {
         <Document
           show={this.state.show}
           handleClose={this.hideDocument}
+          children={this.props.text}
         ></Document>
       </React.Fragment>
     );

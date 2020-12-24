@@ -8,7 +8,9 @@ class RoyalPalace extends Component {
     return (
       <React.Fragment>
         <h1>This is the Royal Palace</h1>
-        <DocumentPreview></DocumentPreview>
+        <DocumentPreview
+          text={<p>Lorem ipsum dolor sit amet</p>}
+        ></DocumentPreview>
         <MapButton></MapButton>
       </React.Fragment>
     );
