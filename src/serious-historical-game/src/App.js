@@ -4,6 +4,7 @@ import RoyalPalace from "./components/RoyalPalace";
 import TreasuryArchives from "./components/TreasuryArchive";
 import Village from "./components/Village";
 import MapScreen from "./components/MapScreen";
+import MyDocuments from "./components/MyDocuments";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path="/village">
             <Village></Village>
+          </Route>
+          <Route path="/mydocuments">
+            <MyDocuments></MyDocuments>
           </Route>
         </Switch>
       </Router>

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import MyDocumentsButton from "./MyDocumentsButton";
 
 class MapScreen extends Component {
   state = {};
@@ -15,6 +16,7 @@ class MapScreen extends Component {
         <li>
           <NavLink to="/village">Go to Callisto's Village</NavLink>
         </li>
+        <MyDocumentsButton></MyDocumentsButton>
       </React.Fragment>
     );
   }

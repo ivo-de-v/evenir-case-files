@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import DocumentPreview from "./DocumentPreview";
 import MapButton from "./MapButton";
+import MyDocumentsButton from "./MyDocumentsButton";
 
 class RoyalPalace extends Component {
   state = {};
@@ -12,6 +13,7 @@ class RoyalPalace extends Component {
           text={<p>Lorem ipsum dolor sit amet</p>}
         ></DocumentPreview>
         <MapButton></MapButton>
+        <MyDocumentsButton></MyDocumentsButton>
       </React.Fragment>
     );
   }

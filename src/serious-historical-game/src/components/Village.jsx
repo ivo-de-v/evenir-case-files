@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import MapButton from "./MapButton";
+import MyDocumentsButton from "./MyDocumentsButton";
 
 class Village extends Component {
   state = {};
@@ -8,6 +9,7 @@ class Village extends Component {
       <React.Fragment>
         <h1> This is Callisto's Village</h1>
         <MapButton></MapButton>
+        <MyDocumentsButton></MyDocumentsButton>
       </React.Fragment>
     );
   }
