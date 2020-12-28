@@ -1,11 +1,17 @@
 import React, { Component } from "react";
 import Document from "./Document";
+import {
+  readTextOnly,
+  returnDocumentTitle,
+  saveTextObject,
+} from "../documentText";
 
 class DocumentPreview extends Component {
   state = { show: false };
 
   showDocument = () => {
     this.setState({ show: true });
+    saveTextObject(this.props.text);
   };
 
   hideDocument = () => {
@@ -15,11 +21,13 @@ class DocumentPreview extends Component {
   render() {
     return (
       <React.Fragment>
-        <p onClick={this.showDocument}>example text</p>
+        <div onClick={this.showDocument}>
+          {returnDocumentTitle(this.props.preview)}
+        </div>
         <Document
           show={this.state.show}
           handleClose={this.hideDocument}
-          children={this.props.text}
+          children={readTextOnly(this.props.text)}
         ></Document>
       </React.Fragment>
     );

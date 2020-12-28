@@ -7,6 +7,7 @@ class MyDocuments extends Component {
     return (
       <React.Fragment>
         <h1>Your document highlights</h1>
+
         <CloseButton></CloseButton>
       </React.Fragment>
     );
