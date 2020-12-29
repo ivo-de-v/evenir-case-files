@@ -1,16 +1,30 @@
 import React, { Component } from "react";
 import CloseButton from "./CloseButton";
-import { readTextFromStorage } from "../documentText";
+import {
+  getDocumentsFromStorage,
+  getDocumentTitle,
+  readTextOnly,
+} from "../documentText";
 
 class MyDocuments extends Component {
-  state = {};
+  state = { documents: [] };
+
+  componentDidMount() {
+    const retreivedDocuments = getDocumentsFromStorage();
+    this.setState({ documents: retreivedDocuments });
+  }
+
   render() {
     return (
-      <React.Fragment>
-        <h1>Your document highlights</h1>
-        <div>{readTextFromStorage()}</div>
+      <>
+        <h1>My Documents</h1>
+        <div>
+          {this.state.documents.map((document) => (
+            <div key={getDocumentTitle(document)}>{readTextOnly(document)}</div>
+          ))}
+        </div>
         <CloseButton></CloseButton>
-      </React.Fragment>
+      </>
     );
   }
 }

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Document from "./Document";
 import {
+  getDocumentTitle,
   readTextOnly,
-  returnDocumentTitle,
   saveTextObject,
 } from "../documentText";
 
@@ -22,7 +22,7 @@ class DocumentPreview extends Component {
     return (
       <React.Fragment>
         <div onClick={this.showDocument}>
-          {returnDocumentTitle(this.props.preview)}
+          {getDocumentTitle(this.props.preview)}
         </div>
         <Document
           show={this.state.show}
