@@ -38,7 +38,6 @@ export function getDocumentsFromStorage() {
     const savedDocument = JSON.parse(sessionStorage.getItem(key));
 
     listofDocuments.push(savedDocument);
-    console.log(listofDocuments);
   }
   return listofDocuments;
 }

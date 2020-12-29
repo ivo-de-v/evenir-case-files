@@ -5,6 +5,7 @@ import {
   getDocumentTitle,
   readTextOnly,
 } from "../documentText";
+import { withRouter } from "react-router-dom";
 
 class MyDocuments extends Component {
   state = { documents: [] };
@@ -23,10 +24,15 @@ class MyDocuments extends Component {
             <div key={getDocumentTitle(document)}>{readTextOnly(document)}</div>
           ))}
         </div>
-        <CloseButton></CloseButton>
+
+        <div>
+          {this.props.location.pathname === "/mydocuments" ? (
+            <CloseButton></CloseButton>
+          ) : null}
+        </div>
       </>
     );
   }
 }
 
-export default MyDocuments;
+export default withRouter(MyDocuments);

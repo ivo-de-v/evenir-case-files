@@ -63,3 +63,8 @@
 .display-none {
   display: none;
 }
+
+.mydocuments-case {
+  float: left;
+  width: 50%;
+}

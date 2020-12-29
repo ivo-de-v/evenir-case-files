@@ -5,6 +5,8 @@ import TreasuryArchives from "./components/TreasuryArchive";
 import Village from "./components/Village";
 import MapScreen from "./components/MapScreen";
 import MyDocuments from "./components/MyDocuments";
+import MyCase from "./components/MyCase";
+import Wrapper from "./components/Wrapper";
 
 function App() {
   return (
@@ -14,19 +16,27 @@ function App() {
           <Route path="/" exact>
             <MapScreen></MapScreen>
           </Route>
-          <Route path="/royalpalace">
-            <RoyalPalace></RoyalPalace>
+          <Route path="/places">
+            <Wrapper>
+              <Route path="/places/royalpalace" exact>
+                <RoyalPalace></RoyalPalace>
+              </Route>
+              <Route path="/places/treasuryarchives" exact>
+                <TreasuryArchives></TreasuryArchives>
+              </Route>
+              <Route path="/places/village" exact>
+                <Village></Village>
+              </Route>
+            </Wrapper>
           </Route>
-          <Route path="/treasuryarchives">
-            <TreasuryArchives></TreasuryArchives>
-          </Route>
-          <Route path="/village">
-            <Village></Village>
-          </Route>
+
           <Route path="/mydocuments">
             <MyDocuments></MyDocuments>
           </Route>
         </Switch>
+        <Route path="/mycase">
+          <MyCase></MyCase>
+        </Route>
       </Router>
     </div>
   );
