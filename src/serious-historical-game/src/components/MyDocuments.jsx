@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import CloseButton from "./CloseButton";
-import {
-  getDocumentsFromStorage,
-  getDocumentTitle,
-  readTextOnly,
-} from "../documentText";
+import { getDocumentsFromStorage } from "../documentText";
 import { withRouter } from "react-router-dom";
+import DocumentPreview from "./DocumentPreview";
 
 class MyDocuments extends Component {
   state = { documents: [] };
@@ -21,7 +18,11 @@ class MyDocuments extends Component {
         <h1>My Documents</h1>
         <div>
           {this.state.documents.map((document) => (
-            <div key={getDocumentTitle(document)}>{readTextOnly(document)}</div>
+            <DocumentPreview
+              preview={document}
+              text={document}
+            ></DocumentPreview>
+            /*<div key={getDocumentTitle(document)}>{readTextOnly(document)}</div>*/
           ))}
         </div>
 
