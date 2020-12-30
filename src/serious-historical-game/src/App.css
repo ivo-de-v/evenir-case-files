@@ -64,7 +64,16 @@
   display: none;
 }
 
-.mydocuments-case {
+.mydocuments-mycase {
   float: left;
   width: 50%;
+}
+
+.headings-mycase {
+  float: right;
+  width: 50%;
+}
+
+.closebutton-mycase {
+  clear: both;
 }
