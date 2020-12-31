@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import CloseButton from "./CloseButton";
-import { getDocumentsFromStorage } from "../documentText";
+import { getDocumentsFromStorage, getDocumentTitle } from "../documentText";
 import { withRouter } from "react-router-dom";
 import DocumentPreview from "./DocumentPreview";
 
@@ -21,8 +21,8 @@ class MyDocuments extends Component {
             <DocumentPreview
               preview={document}
               text={document}
+              key={getDocumentTitle(document)}
             ></DocumentPreview>
-            /*<div key={getDocumentTitle(document)}>{readTextOnly(document)}</div>*/
           ))}
         </div>
 

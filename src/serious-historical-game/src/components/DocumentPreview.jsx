@@ -5,6 +5,7 @@ import {
   readTextOnly,
   saveTextObject,
 } from "../documentText";
+import { withRouter } from "react-router-dom";
 
 class DocumentPreview extends Component {
   state = { show: false };
@@ -20,7 +21,7 @@ class DocumentPreview extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <>
         <div onClick={this.showDocument}>
           {getDocumentTitle(this.props.preview)}
         </div>
@@ -28,10 +29,11 @@ class DocumentPreview extends Component {
           show={this.state.show}
           handleClose={this.hideDocument}
           children={readTextOnly(this.props.text)}
+          location={this.props.location.pathname}
         ></Document>
-      </React.Fragment>
+      </>
     );
   }
 }
 
-export default DocumentPreview;
+export default withRouter(DocumentPreview);

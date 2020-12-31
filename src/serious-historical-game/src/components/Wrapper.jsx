@@ -1,5 +1,6 @@
 import React from "react";
 import MapButton from "./MapButton";
+import MyCaseButton from "./MyCaseButton";
 import MyDocumentsButton from "./MyDocumentsButton";
 
 const Wrapper = (props) => {
@@ -8,6 +9,7 @@ const Wrapper = (props) => {
       <div>{props.children}</div>
       <MapButton></MapButton>
       <MyDocumentsButton></MyDocumentsButton>
+      <MyCaseButton></MyCaseButton>
     </>
   );
 };
