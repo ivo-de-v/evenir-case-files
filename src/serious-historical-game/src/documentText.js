@@ -1,21 +1,26 @@
 export let exampleText = [
   { title: "example text" },
-  { text: "lorem" },
-  { text: "ipsum" },
-  { text: "dolor" },
-  { text: "sit" },
-  { text: "amet" },
+  { text: "lorem " },
+  { text: "ipsum " },
+  { text: "dolor " },
+  { text: "sit " },
+  { text: "amet. " },
 ];
 
 export let exampleVillageText = [
   { title: "talk to the village elder" },
-  { text: "ahoy" },
-  { text: "matey" },
+  { text: "ahoy " },
+  { text: "matey! " },
 ];
 
+export const ItemTypes = {
+  TEXT: "text",
+};
+
 export function readTextOnly(textObject) {
-  let textFromObject = textObject.map((entry) => entry.text);
-  return <>{textFromObject.join(" ")}</>;
+  let arrayOfText = textObject.filter((entry) => entry.text);
+  console.trace();
+  return arrayOfText;
 }
 
 export function getDocumentTitle(textObject) {
@@ -35,9 +40,11 @@ export function getDocumentsFromStorage() {
   var listofDocuments = [];
   for (let i = 0; i < sessionStorage.length; i++) {
     const key = sessionStorage.key(i);
-    const savedDocument = JSON.parse(sessionStorage.getItem(key));
+    if (key.charAt(0) !== "{") {
+      const savedDocument = JSON.parse(sessionStorage.getItem(key));
 
-    listofDocuments.push(savedDocument);
+      listofDocuments.push(savedDocument);
+    }
   }
   return listofDocuments;
 }

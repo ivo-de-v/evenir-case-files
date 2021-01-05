@@ -1,4 +1,6 @@
 import React from "react";
+import DocumentText from "./DocumentText";
+import CaseHeading from "./CaseHeading";
 
 const Document = ({ handleClose, show, children, location }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
@@ -15,7 +17,15 @@ const Document = ({ handleClose, show, children, location }) => {
   return (
     <div className={showHideClassName}>
       <section className={modalClassName}>
-        {children}
+        <div>
+          {children.map((entry) => (
+            <DocumentText
+              text={entry.text}
+              key={Math.random() /* i'll think of something better later*/}
+              location={location}
+            ></DocumentText>
+          ))}
+        </div>
         <button onClick={handleClose}>close</button>
       </section>
     </div>

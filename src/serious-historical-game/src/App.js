@@ -7,38 +7,42 @@ import MapScreen from "./components/MapScreen";
 import MyDocuments from "./components/MyDocuments";
 import MyCase from "./components/MyCase";
 import Wrapper from "./components/Wrapper";
+import { HTML5Backend } from "react-dnd-html5-backend";
+import { DndProvider } from "react-dnd";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Switch>
-          <Route path="/" exact>
-            <MapScreen></MapScreen>
-          </Route>
-          <Route path="/places">
-            <Wrapper>
-              <Route path="/places/royalpalace" exact>
-                <RoyalPalace></RoyalPalace>
-              </Route>
-              <Route path="/places/treasuryarchives" exact>
-                <TreasuryArchives></TreasuryArchives>
-              </Route>
-              <Route path="/places/village" exact>
-                <Village></Village>
-              </Route>
-            </Wrapper>
-          </Route>
+    <DndProvider backend={HTML5Backend}>
+      <div className="App">
+        <Router>
+          <Switch>
+            <Route path="/" exact>
+              <MapScreen></MapScreen>
+            </Route>
+            <Route path="/places">
+              <Wrapper>
+                <Route path="/places/royalpalace" exact>
+                  <RoyalPalace></RoyalPalace>
+                </Route>
+                <Route path="/places/treasuryarchives" exact>
+                  <TreasuryArchives></TreasuryArchives>
+                </Route>
+                <Route path="/places/village" exact>
+                  <Village></Village>
+                </Route>
+              </Wrapper>
+            </Route>
 
-          <Route path="/mydocuments">
-            <MyDocuments></MyDocuments>
+            <Route path="/mydocuments">
+              <MyDocuments></MyDocuments>
+            </Route>
+          </Switch>
+          <Route path="/mycase">
+            <MyCase></MyCase>
           </Route>
-        </Switch>
-        <Route path="/mycase">
-          <MyCase></MyCase>
-        </Route>
-      </Router>
-    </div>
+        </Router>
+      </div>
+    </DndProvider>
   );
 }
 

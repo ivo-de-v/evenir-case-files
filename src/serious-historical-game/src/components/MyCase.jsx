@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import CaseHeading from "./CaseHeading";
 import CloseButton from "./CloseButton";
 import MyDocuments from "./MyDocuments";
 
@@ -13,9 +14,9 @@ class MyCase extends Component {
           <MyDocuments></MyDocuments>
         </div>
         <div className="headings-mycase">
-          <h4>Challenge</h4>
-          <h4>Defend</h4>
-          <h4>Focus</h4>
+          <CaseHeading headingName="Challenge"></CaseHeading>
+          <CaseHeading headingName="Defend"></CaseHeading>
+          <CaseHeading headingName="Focus"></CaseHeading>
           <button>Present your case</button>
         </div>
         <div className="closebutton-mycase">
