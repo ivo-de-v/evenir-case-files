@@ -15,6 +15,7 @@ export let exampleVillageText = [
 
 export const ItemTypes = {
   TEXT: "text",
+  CARD: "card",
 };
 
 export function readTextOnly(textObject) {
