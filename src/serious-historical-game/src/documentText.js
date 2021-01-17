@@ -1,16 +1,16 @@
 export let exampleText = [
   { title: "example text" },
-  { text: "lorem " },
-  { text: "ipsum " },
-  { text: "dolor " },
-  { text: "sit " },
-  { text: "amet. " },
+  { text: "lorem ", score: 0 },
+  { text: "ipsum ", score: 2 },
+  { text: "dolor ", score: 4 },
+  { text: "sit ", score: 0 },
+  { text: "amet. ", score: 1 },
 ];
 
 export let exampleVillageText = [
   { title: "talk to the village elder" },
-  { text: "ahoy " },
-  { text: "matey! " },
+  { text: "ahoy ", score: 0 },
+  { text: "matey! ", score: 2 },
 ];
 
 export const ItemTypes = {
@@ -20,7 +20,6 @@ export const ItemTypes = {
 
 export function readTextOnly(textObject) {
   let arrayOfText = textObject.filter((entry) => entry.text);
-  console.trace();
   return arrayOfText;
 }
 
@@ -41,6 +40,7 @@ export function getDocumentsFromStorage() {
   var listofDocuments = [];
   for (let i = 0; i < sessionStorage.length; i++) {
     const key = sessionStorage.key(i);
+
     if (key.charAt(0) !== "{") {
       const savedDocument = JSON.parse(sessionStorage.getItem(key));
 
@@ -48,4 +48,16 @@ export function getDocumentsFromStorage() {
     }
   }
   return listofDocuments;
+}
+
+export function getTextFromStorage() {
+  var listofText = [];
+  for (let i = 0; i < sessionStorage.length; i++) {
+    const key = sessionStorage.key(i);
+
+    if (key.charAt(0) === "{") {
+      listofText.push(JSON.parse(key));
+    }
+  }
+  return listofText;
 }

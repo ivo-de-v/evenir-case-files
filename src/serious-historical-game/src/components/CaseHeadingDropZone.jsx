@@ -18,6 +18,7 @@ const CaseHeadingDropZone = (headingName) => {
       text: item.text,
       heading: headingName,
       location: item.location,
+      score: item.score,
     };
     sessionStorage.setItem(JSON.stringify(key), JSON.stringify(item));
   }
@@ -29,7 +30,6 @@ const CaseHeadingDropZone = (headingName) => {
 
       if (key.charAt(0) === "{") {
         const parsedKey = JSON.parse(key);
-        console.log("parsedKey", parsedKey);
         textArray.push(parsedKey);
       }
     }

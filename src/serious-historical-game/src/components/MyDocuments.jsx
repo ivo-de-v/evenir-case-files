@@ -9,12 +9,14 @@ class MyDocuments extends Component {
 
   componentDidMount() {
     const retreivedDocuments = getDocumentsFromStorage();
+    console.log("retreivedDocuments", retreivedDocuments);
     this.setState({ documents: retreivedDocuments });
   }
 
   render() {
     return (
       <>
+        {console.log("documents", this.state.documents)}
         <h1>My Documents</h1>
         <div>
           {this.state.documents.map((document) => (

@@ -7,8 +7,10 @@ import MapScreen from "./components/MapScreen";
 import MyDocuments from "./components/MyDocuments";
 import MyCase from "./components/MyCase";
 import Wrapper from "./components/Wrapper";
+import Cutscene from "./components/Cutscene";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
+import PresentScreen from "./components/PresentScreen";
 
 function App() {
   return (
@@ -17,10 +19,13 @@ function App() {
         <Router>
           <Switch>
             <Route path="/" exact>
-              <MapScreen></MapScreen>
+              <Cutscene></Cutscene>
             </Route>
             <Route path="/places">
               <Wrapper>
+                <Route path="/places/mapscreen" exact>
+                  <MapScreen></MapScreen>
+                </Route>
                 <Route path="/places/royalpalace" exact>
                   <RoyalPalace></RoyalPalace>
                 </Route>
@@ -32,13 +37,16 @@ function App() {
                 </Route>
               </Wrapper>
             </Route>
-
-            <Route path="/mydocuments">
-              <MyDocuments></MyDocuments>
-            </Route>
           </Switch>
-          <Route path="/mycase">
+
+          <Route path="/mydocuments" exact>
+            <MyDocuments></MyDocuments>
+          </Route>
+          <Route path="/mycase" exact>
             <MyCase></MyCase>
+          </Route>
+          <Route path="/presentscreen" exact>
+            <PresentScreen></PresentScreen>
           </Route>
         </Router>
       </div>

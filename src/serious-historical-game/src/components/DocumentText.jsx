@@ -2,9 +2,14 @@ import React from "react";
 import { ItemTypes } from "../documentText";
 import { useDrag } from "react-dnd";
 
-function DocumentText({ text, location }) {
+function DocumentText({ text, location, score }) {
   const [{ isDragging }, drag] = useDrag({
-    item: { type: ItemTypes.TEXT, text: text, location: location },
+    item: {
+      type: ItemTypes.TEXT,
+      text: text,
+      location: location,
+      score: score,
+    },
     collect: (monitor) => ({
       isDragging: monitor.isDragging(),
     }),

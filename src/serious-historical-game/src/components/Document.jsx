@@ -1,6 +1,5 @@
 import React from "react";
 import DocumentText from "./DocumentText";
-import CaseHeading from "./CaseHeading";
 
 const Document = ({ handleClose, show, children, location }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
@@ -23,6 +22,7 @@ const Document = ({ handleClose, show, children, location }) => {
               text={entry.text}
               key={Math.random() /* i'll think of something better later*/}
               location={location}
+              score={entry.score}
             ></DocumentText>
           ))}
         </div>
