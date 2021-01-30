@@ -4,6 +4,7 @@ import CaseHeading from "./CaseHeading";
 import CloseButton from "./CloseButton";
 import MyDocuments from "./MyDocuments";
 import PresentButton from "./PresentButton";
+import { getTime } from "../documentText";
 
 const MyCase = () => {
   const [headings, setHeadings] = useState([
@@ -50,6 +51,7 @@ const MyCase = () => {
         {headings.map((heading, i) => renderHeading(heading, i))}
         <PresentButton headings={headings}></PresentButton>
       </div>
+
       <div className="closebutton-mycase">
         <CloseButton></CloseButton>
       </div>
