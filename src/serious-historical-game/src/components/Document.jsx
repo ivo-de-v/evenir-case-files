@@ -16,7 +16,7 @@ const Document = ({ handleClose, show, children, location }) => {
   return (
     <div className={showHideClassName}>
       <section className={modalClassName}>
-        <div>
+        <p>
           {children.map((entry) => (
             <DocumentText
               text={entry.text}
@@ -25,7 +25,7 @@ const Document = ({ handleClose, show, children, location }) => {
               score={entry.score}
             ></DocumentText>
           ))}
-        </div>
+        </p>
         <button onClick={handleClose}>close</button>
       </section>
     </div>

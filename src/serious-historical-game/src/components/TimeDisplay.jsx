@@ -9,13 +9,9 @@ class TimeDisplay extends Component {
       this.setState({ time: getTime() });
     });
     this.setState({ time: getTime() });
-    console.log("so help me god", this.state.time);
   }
 
   render() {
-    {
-      console.log("time in render", getTime());
-    }
     return <span>{this.state.time} days remaining</span>;
   }
 }

@@ -9,10 +9,12 @@ class Cutscene extends Component {
   }
   render() {
     return (
-      <>
+      <div className="centred">
         <p>This is where the initial cutscene will go</p>
-        <Link to="/places/mapscreen">Ok</Link>
-      </>
+        <Link to="/places/mapscreen" className="footer-link-text">
+          Ok
+        </Link>
+      </div>
     );
   }
 }

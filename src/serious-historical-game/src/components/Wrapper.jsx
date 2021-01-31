@@ -12,16 +12,20 @@ const Wrapper = (props) => {
       <div>
         {props.location.pathname === "/places/mapscreen" ? (
           <>
-            <MyDocumentsButton></MyDocumentsButton>
-            <MyCaseButton></MyCaseButton>
-            <TimeDisplay></TimeDisplay>
+            <div className="footer">
+              <MyDocumentsButton></MyDocumentsButton>
+              <MyCaseButton></MyCaseButton>
+              <TimeDisplay></TimeDisplay>
+            </div>
           </>
         ) : (
           <>
-            <MapButton></MapButton>
-            <MyDocumentsButton></MyDocumentsButton>
-            <MyCaseButton></MyCaseButton>
-            <TimeDisplay></TimeDisplay>
+            <div className="footer">
+              <MapButton></MapButton>
+              <MyDocumentsButton></MyDocumentsButton>
+              <MyCaseButton></MyCaseButton>
+              <TimeDisplay></TimeDisplay>
+            </div>
           </>
         )}
       </div>

@@ -2,7 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function MapButton() {
-  return <Link to="/places/mapscreen">View the map</Link>;
+  return (
+    <Link to="/places/mapscreen" className="footer-link footer-link-map">
+      <div className="footer-link-text">Map</div>
+    </Link>
+  );
 }
 
 export default MapButton;

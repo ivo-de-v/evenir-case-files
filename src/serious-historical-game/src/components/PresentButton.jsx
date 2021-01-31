@@ -7,15 +7,6 @@ const PresentButton = (headings) => {
     const snippets = getTextFromStorage();
     const headingList = [];
     headingList.push(headings);
-    console.log("snippets", snippets);
-    console.log("headings", headingList);
-
-    //return a single number at the end?
-    /*
-    totalscore = 0
-    loop over score, add it to totalscore
-    return totalscore
-    */
 
     let totalScore = 0;
     for (let i = 0; i < snippets.length; i++) {

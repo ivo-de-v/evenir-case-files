@@ -1,42 +1,9 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&family=Crimson+Text&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+/*root {
+  --map-url: url("./images/vectorMap.png");
+  --documents-url: url("./images/vectorDocuments.png");
+}*/
 .modal {
   position: fixed;
   top: 0;
@@ -50,8 +17,9 @@
   background: white;
   width: 80%;
   height: auto;
-  border: black;
-  border-style: solid;
+  /*border: black;
+  border-style: solid;*/
+  background-color: #fbefd8;
 }
 
 .modal-mydocuments {
@@ -88,4 +56,88 @@
   height: 3rem;
   width: 24rem;
   margin: auto;
+}
+
+h1 {
+  font-family: "Cormorant Unicase", serif;
+  font-size: 2.5vw;
+}
+p,
+span {
+  font-family: "Crimson Text", serif;
+  font-size: 1.5vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Crimson Text", serif;
+}
+
+.centred {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 2.5vw;
+}
+body {
+  background-color: #fbefd8;
+  height: 100%;
+}
+
+.document-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 30%;
+  text-align: center;
+  font-size: 1.5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-link {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 50px;
+  width: 55px;
+  position: relative;
+}
+
+.footer-link-map {
+  background-image: url("./images/vectorMap.png");
+}
+
+.footer-link-documents {
+  background-image: url("./images/vectorDocuments.png");
+}
+
+.footer-link-case {
+  background-image: url("./images/vectorCase.png");
+  height: 55px;
+  width: 50px;
+}
+
+.footer-link-text {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-link-text-case {
+  top: 139%;
 }

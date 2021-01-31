@@ -9,14 +9,14 @@ class Village extends Component {
   }
   render() {
     return (
-      <>
+      <div className="centred">
         <h1> This is Callisto's Village</h1>
         <p>It will take you 2 days to read the documents here</p>
         <DocumentPreview
           preview={exampleVillageText}
           text={exampleVillageText}
         ></DocumentPreview>
-      </>
+      </div>
     );
   }
 }

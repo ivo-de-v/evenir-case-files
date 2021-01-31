@@ -4,7 +4,6 @@ import CaseHeading from "./CaseHeading";
 import CloseButton from "./CloseButton";
 import MyDocuments from "./MyDocuments";
 import PresentButton from "./PresentButton";
-import { getTime } from "../documentText";
 
 const MyCase = () => {
   const [headings, setHeadings] = useState([
@@ -41,7 +40,7 @@ const MyCase = () => {
   };
 
   return (
-    <>
+    <div className="centred">
       <h1>My Case</h1>
       <h3>case question</h3>
       <div className="mydocuments-mycase">
@@ -55,7 +54,7 @@ const MyCase = () => {
       <div className="closebutton-mycase">
         <CloseButton></CloseButton>
       </div>
-    </>
+    </div>
   );
 };
 
