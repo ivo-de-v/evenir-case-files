@@ -3,13 +3,11 @@ import { NavLink } from "react-router-dom";
 import { updateHistory, updateTime } from "../documentText";
 
 class MapScreen extends Component {
-  componentDidMount() {
-    updateHistory();
-  }
   render() {
     return (
-      <>
-        <ul className="centred">
+      <div className="centred map-screen">
+        <h1> My Map</h1>
+        <ul>
           <li>
             <NavLink to="/places/royalpalace">
               Go to the Royal Palace (time: 7 days)
@@ -26,7 +24,7 @@ class MapScreen extends Component {
             </NavLink>
           </li>
         </ul>
-      </>
+      </div>
     );
   }
 }

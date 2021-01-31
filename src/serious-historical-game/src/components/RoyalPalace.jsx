@@ -5,7 +5,7 @@ import { exampleText, updateHistory, updateTime } from "../documentText";
 class RoyalPalace extends Component {
   componentDidMount() {
     updateHistory();
-    updateTime(7);
+    updateTime(7, false);
   }
 
   render() {

@@ -5,7 +5,7 @@ import DocumentPreview from "./DocumentPreview";
 class Village extends Component {
   componentDidMount() {
     updateHistory();
-    updateTime(7);
+    updateTime(7, false);
   }
   render() {
     return (

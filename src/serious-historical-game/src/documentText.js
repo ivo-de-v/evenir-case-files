@@ -78,14 +78,14 @@ export function getTime() {
   return currentTime;
 }
 
-export function updateTime(spentTime) {
+export function updateTime(spentTime, documentFlag) {
   const previousTime = getTime();
   const remainingTime = previousTime - spentTime;
   const justVisited = checkPrevHistory();
 
   if (remainingTime <= 0) {
     window.location.replace("/mycase");
-  } else if (justVisited === true) {
+  } else if (justVisited === true && documentFlag === false) {
     return;
   } else {
     initialiseTime(remainingTime);
@@ -97,16 +97,13 @@ export function initialiseHistory(array) {
 }
 
 export function getHistoryAndCurrentUrl() {
-  //console.log("test getitem", sessionStorage.getItem("history"));
   let historyArray = JSON.parse(sessionStorage.getItem("history"));
-  //console.log("historyarray in gethistoryandcurrenturl", historyArray);
   const currentUrl = window.location.pathname;
   return [historyArray, currentUrl];
 }
 
 export function updateHistory() {
   let [historyArray, currentUrl] = getHistoryAndCurrentUrl();
-  //console.log("historyarray in updatehistory", historyArray);
   historyArray.push(currentUrl);
   initialiseHistory(historyArray);
 }
@@ -115,7 +112,11 @@ export function checkPrevHistory() {
   let [historyArray, currentUrl] = getHistoryAndCurrentUrl();
   let justVisited = false;
 
-  if (historyArray[historyArray.length - 3] === currentUrl) {
+  //if this is the first place you click on in the game, then you've not just visited it
+  if (historyArray.length === 1) {
+    justVisited = false;
+    // if you were already there and you click back from a menu page, then don't subtract time
+  } else if (historyArray[historyArray.length - 1] === currentUrl) {
     justVisited = true;
   }
 

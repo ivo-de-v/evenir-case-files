@@ -25,7 +25,7 @@ class DocumentPreview extends Component {
     }
 
     if (typeof found === "undefined") {
-      updateTime(2);
+      updateTime(2, true);
       window.dispatchEvent(new Event("storage"));
     }
     saveTextObject(this.props.text);
