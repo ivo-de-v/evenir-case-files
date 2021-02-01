@@ -40,13 +40,17 @@ function App() {
           </Switch>
 
           <Route path="/mydocuments" exact>
-            <MyDocuments></MyDocuments>
+            <div className="centred">
+              <MyDocuments></MyDocuments>
+            </div>
           </Route>
           <Route path="/mycase" exact>
             <MyCase></MyCase>
           </Route>
           <Route path="/presentscreen" exact>
-            <PresentScreen></PresentScreen>
+            <div className="centred">
+              <PresentScreen></PresentScreen>
+            </div>
           </Route>
         </Router>
       </div>

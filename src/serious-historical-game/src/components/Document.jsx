@@ -3,14 +3,10 @@ import DocumentText from "./DocumentText";
 
 const Document = ({ handleClose, show, children, location }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
-  let modalClassName = "";
+  let modalClassName = "modal-main modal-mydocuments";
 
-  if (location === "/mydocuments") {
-    modalClassName = "modal-main modal-mydocuments";
-  } else if (location.includes("/places")) {
-    modalClassName = "modal-main modal-mydocuments";
-  } else {
-    modalClassName = "modal-main mydocuments-mycase";
+  if (location === "/mycase") {
+    modalClassName = "modal-main modal-mycase";
   }
 
   return (

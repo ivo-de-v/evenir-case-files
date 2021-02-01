@@ -1,46 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&family=Crimson+Text&display=swap");
 
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-}
-
-.modal-main {
-  position: fixed;
-  background: white;
-  width: 80%;
-  height: auto;
-  /*border: black;
-  border-style: solid;*/
+body {
   background-color: #fbefd8;
-}
-
-.modal-mydocuments {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.display-block {
-  display: block;
-}
-
-.display-none {
-  display: none;
-}
-
-.mycase-heading-box {
-  min-width: 100%;
-  min-height: 100%;
-  border: 1px black solid;
+  height: 100%;
 }
 
 h1 {
   font-family: "Cormorant Unicase", serif;
   font-size: 2.5vw;
+}
+h3 {
+  font-family: "Cormorant Unicase", serif;
+  font-size: 1.5vw;
+}
+h4 {
+  font-family: "Cormorant Unicase", serif;
+  font-size: 1.5vw;
 }
 p,
 span {
@@ -54,6 +29,50 @@ a {
   font-family: "Crimson Text", serif;
 }
 
+button {
+  background-color: transparent;
+  border: 1px solid black;
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.modal-main {
+  position: fixed;
+  width: 500px;
+  height: 300px;
+  border: black;
+  border-style: double;
+  background-color: #f8ecc2;
+}
+
+.modal-mydocuments {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-mycase {
+  top: 55%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.mycase-heading-box {
+  width: 250px;
+  height: 50px;
+  border: 1px black solid;
+}
+
 .centred {
   position: absolute;
   top: 25%;
@@ -61,10 +80,6 @@ a {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-}
-body {
-  background-color: #fbefd8;
-  height: 100%;
 }
 
 .document-container {
