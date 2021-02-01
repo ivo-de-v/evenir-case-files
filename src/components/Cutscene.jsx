@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { initialiseHistory, initialiseTime } from "../documentText";
+import { initialiseHistory, initialiseTime } from "../utils/scripts";
 
 class Cutscene extends Component {
   componentDidMount() {

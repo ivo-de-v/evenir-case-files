@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import CloseButton from "./CloseButton";
-import { getDocumentsFromStorage, getDocumentTitle } from "../documentText";
+import { getDocumentsFromStorage, getDocumentTitle } from "../utils/scripts";
 import { withRouter } from "react-router-dom";
 import DocumentPreview from "./DocumentPreview";
 

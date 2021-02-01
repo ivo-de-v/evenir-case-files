@@ -5,9 +5,9 @@ import {
   getDocumentTitle,
   readTextOnly,
   saveTextObject,
-} from "../documentText";
+} from "../utils/scripts";
 import { withRouter } from "react-router-dom";
-import { updateTime } from "../documentText";
+import { updateTime } from "../utils/scripts";
 
 class DocumentPreview extends Component {
   state = { show: false };

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { updateHistory, updateTime } from "../documentText";
+import { updateHistory, updateTime } from "../utils/scripts";
 
 class TreasuryArchive extends Component {
   componentDidMount() {

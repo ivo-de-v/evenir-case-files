@@ -1,5 +1,5 @@
 import React from "react";
-import { ItemTypes } from "../documentText";
+import { ItemTypes } from "../utils/documentTexts";
 import { useDrag } from "react-dnd";
 
 function DocumentText({ text, location, score }) {

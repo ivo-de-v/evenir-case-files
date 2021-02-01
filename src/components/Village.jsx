@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { exampleVillageText, updateHistory, updateTime } from "../documentText";
+import { updateHistory, updateTime } from "../utils/scripts";
+import { exampleVillageText } from "../utils/documentTexts";
 import DocumentPreview from "./DocumentPreview";
 
 class Village extends Component {

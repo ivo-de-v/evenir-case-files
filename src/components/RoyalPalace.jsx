@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import DocumentPreview from "./DocumentPreview";
-import { exampleText, updateHistory, updateTime } from "../documentText";
+import { updateHistory, updateTime } from "../utils/scripts";
+import { exampleText } from "../utils/documentTexts";
 
 class RoyalPalace extends Component {
   componentDidMount() {

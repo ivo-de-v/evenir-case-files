@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import { updateHistory, updateTime } from "../documentText";
+import { updateHistory, updateTime } from "../utils/scripts";
 
 class MapScreen extends Component {
   render() {

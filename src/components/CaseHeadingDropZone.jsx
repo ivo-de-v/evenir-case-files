@@ -1,6 +1,6 @@
 import React from "react";
 import { useDrop } from "react-dnd";
-import { ItemTypes } from "../documentText";
+import { ItemTypes } from "../utils/documentTexts";
 import DocumentText from "./DocumentText";
 
 const CaseHeadingDropZone = (headingName) => {

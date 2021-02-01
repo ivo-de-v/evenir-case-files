@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getTime } from "../documentText";
+import { getTime } from "../utils/scripts";
 
 class TimeDisplay extends Component {
   state = { time: getTime() };

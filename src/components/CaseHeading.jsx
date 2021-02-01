@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useDrag, useDrop } from "react-dnd";
-import { ItemTypes } from "../documentText";
+import { ItemTypes } from "../utils/documentTexts";
 import CaseHeadingDropZone from "./CaseHeadingDropZone";
 
 const CaseHeading = ({ id, headingName, index, moveHeading }) => {
