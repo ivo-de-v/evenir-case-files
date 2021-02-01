@@ -40,18 +40,21 @@ const MyCase = () => {
   };
 
   return (
-    <div className="centred">
-      <h1>My Case</h1>
-      <h3>case question</h3>
-      <div className="mydocuments-mycase">
-        <MyDocuments></MyDocuments>
+    <div className="case-grid">
+      <div className="case-title">
+        <h1>My Case</h1>
+        <h3>Case Question</h3>
       </div>
-      <div className="headings-mycase">
+
+      <div className="case-documents">
+        <MyDocuments />
+      </div>
+      <div className="case-headings">
         {headings.map((heading, i) => renderHeading(heading, i))}
         <PresentButton headings={headings}></PresentButton>
       </div>
 
-      <div className="closebutton-mycase">
+      <div className="case-closebutton">
         <CloseButton></CloseButton>
       </div>
     </div>

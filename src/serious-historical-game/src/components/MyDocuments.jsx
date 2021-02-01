@@ -14,7 +14,8 @@ class MyDocuments extends Component {
 
   render() {
     return (
-      <div className="centred">
+      //<div className="centred">
+      <div>
         <h1>My Documents</h1>
         <div>
           {this.state.documents.map((document) => (
