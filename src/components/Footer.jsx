@@ -13,7 +13,7 @@ const Footer = (props) => {
           <div className="footer-inner">
             <MyDocumentsButton></MyDocumentsButton>
             <MyCaseButton></MyCaseButton>
-            <TimeDisplay></TimeDisplay>
+            <TimeDisplay time={props.time}></TimeDisplay>
           </div>
         </>
       ) : (
@@ -22,7 +22,7 @@ const Footer = (props) => {
             <MapButton></MapButton>
             <MyDocumentsButton></MyDocumentsButton>
             <MyCaseButton></MyCaseButton>
-            <TimeDisplay></TimeDisplay>
+            <TimeDisplay time={props.time}></TimeDisplay>
           </div>
         </>
       )}

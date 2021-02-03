@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import Footer from "./Footer";
+import { getTime, updateTime } from "../utils/scripts";
 
 class MapScreen extends Component {
+  state = { time: getTime() };
+
   render() {
     return (
       <div className="place-grid map-screen">
@@ -29,7 +32,7 @@ class MapScreen extends Component {
           </ul>
         </div>
         <div className="footer">
-          <Footer />
+          <Footer time={this.state.time} />
         </div>
       </div>
     );

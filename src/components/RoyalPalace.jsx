@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import DocumentPreview from "./DocumentPreview";
-import { updateHistory, updateTime } from "../utils/scripts";
+import { getTime, updateHistory, updateTime } from "../utils/scripts";
 import {
   KingdomOfEvenir,
   KingsOfEvenir,
@@ -9,9 +9,11 @@ import {
 import Footer from "./Footer";
 
 class RoyalPalace extends Component {
+  state = { time: getTime() };
   componentDidMount() {
     updateHistory();
     updateTime(7, false);
+    this.setState({ time: getTime() });
   }
 
   render() {
@@ -40,7 +42,7 @@ class RoyalPalace extends Component {
           </div>
         </div>
         <div className="footer">
-          <Footer />
+          <Footer time={this.state.time} />
         </div>
       </div>
     );

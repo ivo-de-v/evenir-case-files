@@ -5,14 +5,16 @@ import {
   PopulationCensus,
   PopulationCensusRegional,
 } from "../utils/documentTexts";
-import { updateHistory, updateTime } from "../utils/scripts";
+import { getTime, updateHistory, updateTime } from "../utils/scripts";
 import DocumentPreview from "./DocumentPreview";
 import Footer from "./Footer";
 
 class TreasuryArchive extends Component {
+  state = { time: getTime() };
   componentDidMount() {
     updateHistory();
     updateTime(7, false);
+    this.setState({ time: getTime() });
   }
   render() {
     return (
@@ -49,7 +51,7 @@ class TreasuryArchive extends Component {
           </div>
         </div>
         <div className="footer">
-          <Footer />
+          <Footer time={this.state.time} />
         </div>
       </div>
     );

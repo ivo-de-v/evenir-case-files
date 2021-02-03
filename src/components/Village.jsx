@@ -1,13 +1,15 @@
 import React, { Component } from "react";
-import { updateHistory, updateTime } from "../utils/scripts";
+import { getTime, updateHistory, updateTime } from "../utils/scripts";
 import { VillageElder } from "../utils/documentTexts";
 import DocumentPreview from "./DocumentPreview";
 import Footer from "./Footer";
 
 class Village extends Component {
+  state = { time: getTime() };
   componentDidMount() {
     updateHistory();
     updateTime(7, false);
+    this.setState({ time: getTime() });
   }
   render() {
     return (
@@ -26,7 +28,7 @@ class Village extends Component {
           </div>
         </div>
         <div className="footer">
-          <Footer />
+          <Footer time={this.state.time} />
         </div>
       </div>
     );
