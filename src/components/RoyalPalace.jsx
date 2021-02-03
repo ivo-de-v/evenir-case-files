@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import DocumentPreview from "./DocumentPreview";
 import { updateHistory, updateTime } from "../utils/scripts";
-import { exampleText } from "../utils/documentTexts";
+import {
+  KingdomOfEvenir,
+  KingsOfEvenir,
+  Letters,
+} from "../utils/documentTexts";
 
 class RoyalPalace extends Component {
   componentDidMount() {
@@ -17,9 +21,18 @@ class RoyalPalace extends Component {
         <div className="document-container">
           <div className="document-preview">
             <DocumentPreview
-              preview={exampleText}
-              text={exampleText}
+              preview={KingsOfEvenir}
+              text={KingsOfEvenir}
             ></DocumentPreview>
+          </div>
+          <div className="document-preview">
+            <DocumentPreview
+              preview={KingdomOfEvenir}
+              text={KingdomOfEvenir}
+            ></DocumentPreview>
+          </div>
+          <div className="document-preview">
+            <DocumentPreview preview={Letters} text={Letters}></DocumentPreview>
           </div>
         </div>
       </div>

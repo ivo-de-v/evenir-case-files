@@ -12,7 +12,7 @@ class TimeDisplay extends Component {
   }
 
   render() {
-    return <span>{this.state.time} days remaining</span>;
+    return <p>{this.state.time} days remaining</p>;
   }
 }
 

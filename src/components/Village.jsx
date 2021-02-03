@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { updateHistory, updateTime } from "../utils/scripts";
-import { exampleVillageText } from "../utils/documentTexts";
+import { VillageElder } from "../utils/documentTexts";
 import DocumentPreview from "./DocumentPreview";
 
 class Village extends Component {
@@ -13,10 +13,14 @@ class Village extends Component {
       <div className="centred">
         <h1> This is Callisto's Village</h1>
         <p>It will take you 2 days to read the documents here</p>
-        <DocumentPreview
-          preview={exampleVillageText}
-          text={exampleVillageText}
-        ></DocumentPreview>
+        <div className="document-container">
+          <div className="document-preview">
+            <DocumentPreview
+              preview={VillageElder}
+              text={VillageElder}
+            ></DocumentPreview>
+          </div>
+        </div>
       </div>
     );
   }
