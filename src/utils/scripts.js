@@ -96,7 +96,7 @@ export function checkPrevHistory() {
   if (historyArray.length === 1) {
     justVisited = false;
     // if you were already there and you click back from a menu page, then don't subtract time
-  } else if (historyArray[historyArray.length - 1] === currentUrl) {
+  } else if (historyArray[historyArray.length - 2] === currentUrl) {
     justVisited = true;
   }
 
