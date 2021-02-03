@@ -6,7 +6,6 @@ import Village from "./components/Village";
 import MapScreen from "./components/MapScreen";
 import MyDocuments from "./components/MyDocuments";
 import MyCase from "./components/MyCase";
-import Wrapper from "./components/Wrapper";
 import Cutscene from "./components/Cutscene";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
@@ -19,37 +18,33 @@ function App() {
         <Router>
           <Switch>
             <Route path="/" exact>
-              <Cutscene></Cutscene>
+              <Cutscene />
             </Route>
-            <Route path="/places">
-              <Wrapper>
-                <Route path="/places/mapscreen" exact>
-                  <MapScreen></MapScreen>
-                </Route>
-                <Route path="/places/royalpalace" exact>
-                  <RoyalPalace></RoyalPalace>
-                </Route>
-                <Route path="/places/treasuryarchives" exact>
-                  <TreasuryArchives></TreasuryArchives>
-                </Route>
-                <Route path="/places/village" exact>
-                  <Village></Village>
-                </Route>
-              </Wrapper>
+            <Route path="/mapscreen">
+              <MapScreen />
+            </Route>
+            <Route path="/royalpalace">
+              <RoyalPalace />
+            </Route>
+            <Route path="/treasuryarchives">
+              <TreasuryArchives />
+            </Route>
+            <Route path="/village">
+              <Village />
             </Route>
           </Switch>
 
           <Route path="/mydocuments" exact>
             <div className="centred">
-              <MyDocuments></MyDocuments>
+              <MyDocuments />
             </div>
           </Route>
           <Route path="/mycase" exact>
-            <MyCase></MyCase>
+            <MyCase />
           </Route>
           <Route path="/presentscreen" exact>
             <div className="centred">
-              <PresentScreen></PresentScreen>
+              <PresentScreen />
             </div>
           </Route>
         </Router>

@@ -7,6 +7,7 @@ import {
 } from "../utils/documentTexts";
 import { updateHistory, updateTime } from "../utils/scripts";
 import DocumentPreview from "./DocumentPreview";
+import Footer from "./Footer";
 
 class TreasuryArchive extends Component {
   componentDidMount() {
@@ -15,10 +16,13 @@ class TreasuryArchive extends Component {
   }
   render() {
     return (
-      <div className="centred">
-        <h1 className="title">This is the Treasury Archive</h1>
-        <p>It will take you 2 days to read the documents here</p>
-        <div className="document-container">
+      <div className="place-grid">
+        <div className="case-title">
+          <h1 className="title">This is the Treasury Archive</h1>
+          <p>It will take you 2 days to read the documents here</p>
+        </div>
+
+        <div className="place-documents">
           <div className="document-preview">
             <DocumentPreview
               preview={economicReports}
@@ -43,6 +47,9 @@ class TreasuryArchive extends Component {
               text={PopulationCensusRegional}
             ></DocumentPreview>
           </div>
+        </div>
+        <div className="footer">
+          <Footer />
         </div>
       </div>
     );
