@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import Footer from "./Footer";
-import { getTime, updateTime } from "../utils/scripts";
+import { getTime } from "../utils/scripts";
 
 class MapScreen extends Component {
   state = { time: getTime() };

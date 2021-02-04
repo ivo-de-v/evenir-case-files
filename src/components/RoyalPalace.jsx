@@ -14,6 +14,10 @@ class RoyalPalace extends Component {
     updateHistory();
     updateTime(7, false);
     this.setState({ time: getTime() });
+
+    window.addEventListener("storage", (event) => {
+      this.setState({ time: getTime() });
+    });
   }
 
   render() {

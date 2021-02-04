@@ -51,11 +51,11 @@ const MyCase = () => {
       </div>
       <div className="case-headings">
         {headings.map((heading, i) => renderHeading(heading, i))}
-        <PresentButton headings={headings}></PresentButton>
+        <PresentButton headings={headings} />
       </div>
 
       <div className="case-closebutton">
-        <CloseButton></CloseButton>
+        <CloseButton />
       </div>
     </div>
   );

@@ -15,16 +15,20 @@ class DocumentPreview extends Component {
   showDocument = () => {
     this.setState({ show: true });
     const documentTitle = getDocumentTitle(this.props.preview);
+    console.log("documenttitle", documentTitle);
     const testArray = getDocumentsFromStorage();
+    console.log("testarray", testArray);
 
     let found = undefined;
     for (let i = 0; i < testArray.length; i++) {
       found = testArray[i].find((element) => {
         return element.title === documentTitle;
       });
+      console.log("found in loop", found);
     }
 
     if (typeof found === "undefined") {
+      console.log("found", found);
       updateTime(2, true);
       window.dispatchEvent(new Event("storage"));
     }

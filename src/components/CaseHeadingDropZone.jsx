@@ -64,7 +64,7 @@ const CaseHeadingDropZone = (headingName) => {
               key={Math.random()}
               text={entry.text}
               location={entry.location}
-            ></DocumentText>
+            />
           ))}
       </div>
     </>
