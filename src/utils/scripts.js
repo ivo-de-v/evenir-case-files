@@ -105,11 +105,14 @@ export function checkPrevHistory() {
 
 export function subtractReadingTime(title) {
   const documentTitle = getDocumentTitle(title);
-  const testArray = getDocumentsFromStorage();
+  const documents = getDocumentsFromStorage();
 
   let found = undefined;
-  for (let i = 0; i < testArray.length; i++) {
-    found = testArray[i].find((element) => {
+  for (let i = 0; i < documents.length; i++) {
+    /*this iterates through the array and checks each document's title to see if it matches with the one that's currently 
+    being read. if it finds one, it breaks out of the foor loop, otherwise it would move onto the next, not find it, and set
+    found to undefined as a result, which is not what we want*/
+    found = documents[i].find((element) => {
       return element.title === documentTitle;
     });
     if (typeof found !== "undefined") {
@@ -121,4 +124,16 @@ export function subtractReadingTime(title) {
     updateTime(2, true);
     window.dispatchEvent(new Event("storage"));
   }
+}
+
+export function calculateScore(headings) {
+  const snippets = getTextFromStorage();
+  const headingList = [];
+  headingList.push(headings);
+
+  let totalScore = 0;
+  for (let i = 0; i < snippets.length; i++) {
+    totalScore += snippets[i].score;
+  }
+  return totalScore;
 }
