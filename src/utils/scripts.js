@@ -102,3 +102,23 @@ export function checkPrevHistory() {
 
   return justVisited;
 }
+
+export function subtractReadingTime(title) {
+  const documentTitle = getDocumentTitle(title);
+  const testArray = getDocumentsFromStorage();
+
+  let found = undefined;
+  for (let i = 0; i < testArray.length; i++) {
+    found = testArray[i].find((element) => {
+      return element.title === documentTitle;
+    });
+    if (typeof found !== "undefined") {
+      break;
+    }
+  }
+
+  if (typeof found === "undefined") {
+    updateTime(2, true);
+    window.dispatchEvent(new Event("storage"));
+  }
+}
