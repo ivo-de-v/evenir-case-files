@@ -126,14 +126,25 @@ export function subtractReadingTime(title) {
   }
 }
 
-export function calculateScore(headings) {
+export function calculateScore(headings, sliderValue) {
   const snippets = getTextFromStorage();
   const headingList = [];
   headingList.push(headings);
+  console.log("sliderValue", sliderValue);
+  //TODO something with slidervalue
 
   let totalScore = 0;
   for (let i = 0; i < snippets.length; i++) {
     totalScore += snippets[i].score;
   }
   return totalScore;
+}
+
+export function storeSliderValue(value) {
+  sessionStorage.setItem("slider", JSON.stringify(value));
+}
+
+export function getSliderValue() {
+  const sliderValue = JSON.parse(sessionStorage.getItem("slider"));
+  return sliderValue;
 }

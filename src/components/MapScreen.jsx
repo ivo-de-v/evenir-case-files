@@ -11,23 +11,20 @@ class MapScreen extends Component {
       <div className="place-grid map-screen">
         <div className="case-title">
           <h1> My Map</h1>
+          <p>It will take you 7 days to travel to any of these locations </p>
         </div>
         <div className="place-documents">
           <ul>
             <li>
-              <NavLink to="/royalpalace">
-                Go to the Royal Palace (time: 7 days)
-              </NavLink>
+              <NavLink to="/royalpalace">Go to the Royal Palace</NavLink>
             </li>
             <li>
               <NavLink to="/treasuryarchives">
-                Go to the Treasury Archives (time: 7 days)
+                Go to the Treasury Archives
               </NavLink>
             </li>
             <li>
-              <NavLink to="/village">
-                Go to Callisto's Village (time: 7 days)
-              </NavLink>
+              <NavLink to="/village">Go to Callisto's Village</NavLink>
             </li>
           </ul>
         </div>

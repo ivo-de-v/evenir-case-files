@@ -14,9 +14,9 @@ class MyDocuments extends Component {
 
   render() {
     return (
-      //<div className="centred">
       <div>
         <h1>My Documents</h1>
+        <p>Read documents used to build your Case</p>
         <div>
           {this.state.documents.map((document) => (
             <DocumentPreview

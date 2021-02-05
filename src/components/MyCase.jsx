@@ -4,6 +4,7 @@ import CaseHeading from "./CaseHeading";
 import CloseButton from "./CloseButton";
 import MyDocuments from "./MyDocuments";
 import PresentButton from "./PresentButton";
+import RangeSlider from "./RangeSlider";
 
 const MyCase = () => {
   const [headings, setHeadings] = useState([
@@ -43,7 +44,10 @@ const MyCase = () => {
     <div className="case-grid">
       <div className="case-title">
         <h1>My Case</h1>
-        <h3>Case Question</h3>
+        <h3>
+          Was sealing the witch Callisto necessary for the good of the kingdom?
+        </h3>
+        <RangeSlider />
       </div>
 
       <div className="case-documents">

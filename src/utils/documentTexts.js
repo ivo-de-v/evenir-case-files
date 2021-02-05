@@ -3,6 +3,28 @@ export const ItemTypes = {
   CARD: "card",
 };
 
+export const cutsceneText1 = {
+  number: 1,
+  text: `Sixty-six years ago, the Kingdom of Evenir trembled in the grip of the evil witch Callisto. In her wake, crops ceased to grow, villagers vanished into the night, and fearsome monsters wreaked destruction on the land. 
+  
+  Evenir’s great king, Richard the Cleanser, in his mercy, sought to bargain with the witch. His envoy was Symon, the kingdom’s most honourable knight. But the Callisto cursed Symon, and Evenir mourned his loss. 
+
+ Having no choice, king Richard summoned his army, and waged a fierce battle against the witch. Callisto could not be killed, but she was sealed away, so that she could never harm the kingdom again. 
+ 
+ Since those dark days, Evenir has only seen growth and prosperity. All hail the King!`,
+};
+
+export const cutsceneText2 = {
+  number: 2,
+  text: `Or so the court historians of Evenir say.  
+
+  But you know at least one part of the story to be false, don’t you? 
+  
+  The knight Symon was your grandfather. He stayed with Callisto willingly. The witch’s blood runs through you. She was an ally of the Council of Mages, and we did not authorise her entrapment.
+  
+  So the Council tasks you, as its Keeper of Records, to prepare a report on the extent of the truth in the court historian’s claims. You have one month until the report is due.  `,
+};
+
 const worthless = 0;
 const useful = 1;
 const good_info = 2;
