@@ -67,8 +67,8 @@ button {
 
 .modal-main {
   position: fixed;
-  width: 500px;
-  height: 400px;
+  /*width: 500px;
+  height: 400px;*/
   border: black;
   border-style: double;
   background-color: #f8ecc2;
@@ -83,7 +83,10 @@ button {
 .modal-mycase {
   top: 55%;
   left: 30%;
-  transform: translate(-50%, -50%);
+  /*transform: translate(-50%, -50%);*/
+  -moz-transform: translateX(-55%) translateY(-30%);
+  -webkit-transform: translateX(-55%) translateY(-30%);
+  transform: translateX(-55%) translateY(-30%);
 }
 
 .display-block {
