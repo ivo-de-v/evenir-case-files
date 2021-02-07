@@ -193,3 +193,10 @@ export const defendPlaceholder =
 
 export const focusPlaceholder =
   "Drag sentences from documents you want to focus on here";
+
+export const unhappyCouncilText =
+  "The Council is not pleased with the quality of your case. There are not enough relevant points for them to make a convincing argument to the King. Try again.";
+export const dividedCouncilText =
+  "The Council's opinion on the quality of your case is divided. Although there are some relevant points, some Councilmen feel that the overall argument is not as incisive as it could have been. Not bad, but you can do better.";
+export const happyCouncilText =
+  "Congratulations! The Council is very pleased with the quality of your case. The points are impactful and your opinion is well-supported by evidence. Good job.";

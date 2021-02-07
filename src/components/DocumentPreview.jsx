@@ -13,8 +13,10 @@ class DocumentPreview extends Component {
 
   showDocument = () => {
     this.setState({ show: true });
-    subtractReadingTime(this.props.preview);
-    saveTextObject(this.props.text);
+    if (this.props.location.pathname !== "/mycase") {
+      subtractReadingTime(this.props.preview);
+      saveTextObject(this.props.text);
+    }
   };
 
   hideDocument = () => {

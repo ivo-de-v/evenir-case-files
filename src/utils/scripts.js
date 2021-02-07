@@ -137,6 +137,18 @@ export function calculateScore(headings, sliderValue) {
   for (let i = 0; i < snippets.length; i++) {
     totalScore += snippets[i].score;
   }
+
+  if (sliderValue === 0) {
+    totalScore += +1;
+  } else if (sliderValue === 1) {
+    totalScore += 2;
+  } else if (sliderValue === 2) {
+    totalScore += 0;
+  } else if (sliderValue === 3) {
+    totalScore += -1;
+  } else {
+    totalScore += -2;
+  }
   return totalScore;
 }
 

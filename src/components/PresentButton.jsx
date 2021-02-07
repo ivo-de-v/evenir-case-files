@@ -8,7 +8,7 @@ const PresentButton = (headings) => {
   const toPresentScreen = () => {
     const sliderValue = getSliderValue();
     const score = calculateScore(headings, sliderValue);
-    history.push("/presentscreen", { score: score, sliderValue: sliderValue });
+    history.push("/presentscreen", { score: score });
   };
 
   return <button onClick={toPresentScreen}>Present Your Case</button>;

@@ -1,12 +1,25 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
+import {
+  unhappyCouncilText,
+  happyCouncilText,
+  dividedCouncilText,
+} from "../utils/documentTexts";
 
 const PresentScreen = (props) => {
   const score = props.location.state.score;
-  const sliderValue = props.location.state.sliderValue;
-  console.log("sliderValue", sliderValue);
 
-  return <p> congratulations, your score is {score}</p>;
+  let finalText = "";
+
+  if (score < 4) {
+    finalText = unhappyCouncilText;
+  } else if (score > 6) {
+    finalText = happyCouncilText;
+  } else {
+    finalText = dividedCouncilText;
+  }
+
+  return <p> {finalText}</p>;
 };
 
 export default withRouter(PresentScreen);
