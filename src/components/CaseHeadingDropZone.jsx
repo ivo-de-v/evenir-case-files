@@ -3,7 +3,7 @@ import { useDrop } from "react-dnd";
 import { ItemTypes } from "../utils/documentTexts";
 import DocumentText from "./DocumentText";
 
-const CaseHeadingDropZone = (headingName) => {
+const CaseHeadingDropZone = ({ headingName, placeholder }) => {
   const [{ canDrop, isOver }, drop] = useDrop({
     accept: ItemTypes.TEXT,
     drop: (item, monitor) => testPut(item),
@@ -37,7 +37,7 @@ const CaseHeadingDropZone = (headingName) => {
   }
 
   function displayCorrectText(entry) {
-    return entry.heading.headingName === headingName.headingName;
+    return entry.heading === headingName;
   }
 
   const isActive = canDrop && isOver;
@@ -56,6 +56,7 @@ const CaseHeadingDropZone = (headingName) => {
         ref={drop}
         className="mycase-heading-box"
         style={{ backgroundColor }}
+        data-placeholder={placeholder}
       >
         {testGet()
           .filter(displayCorrectText)

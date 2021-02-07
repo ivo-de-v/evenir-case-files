@@ -5,12 +5,21 @@ import CloseButton from "./CloseButton";
 import MyDocuments from "./MyDocuments";
 import PresentButton from "./PresentButton";
 import RangeSlider from "./RangeSlider";
+import {
+  challengePlaceholder,
+  defendPlaceholder,
+  focusPlaceholder,
+} from "../utils/documentTexts";
 
 const MyCase = () => {
   const [headings, setHeadings] = useState([
-    { id: 1, headingName: "Challenge" },
-    { id: 2, headingName: "Defend" },
-    { id: 3, headingName: "Focus" },
+    {
+      id: 1,
+      headingName: "Challenge",
+      placeholder: challengePlaceholder,
+    },
+    { id: 2, headingName: "Defend", placeholder: defendPlaceholder },
+    { id: 3, headingName: "Focus", placeholder: focusPlaceholder },
   ]);
 
   const moveHeading = useCallback(
@@ -36,6 +45,7 @@ const MyCase = () => {
         id={heading.id}
         headingName={heading.headingName}
         moveHeading={moveHeading}
+        placeholder={heading.placeholder}
       />
     );
   };

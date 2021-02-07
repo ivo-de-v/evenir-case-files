@@ -94,12 +94,6 @@ button {
   display: none;
 }
 
-.mycase-heading-box {
-  min-width: 250px;
-  min-height: 50px;
-  border: 1px black solid;
-}
-
 .centred {
   position: absolute;
   top: 25%;
@@ -195,6 +189,18 @@ button {
 .case-closebutton {
   grid-area: closebutton;
   text-align: center;
+}
+
+.mycase-heading-box {
+  min-width: 250px;
+  min-height: 50px;
+  border: 1px black solid;
+}
+
+div:empty:before {
+  content: attr(data-placeholder);
+  color: gray;
+  font-family: "Crimson Text", serif;
 }
 
 /*places styling */

@@ -3,7 +3,7 @@ import { useDrag, useDrop } from "react-dnd";
 import { ItemTypes } from "../utils/documentTexts";
 import CaseHeadingDropZone from "./CaseHeadingDropZone";
 
-const CaseHeading = ({ id, headingName, index, moveHeading }) => {
+const CaseHeading = ({ id, headingName, index, moveHeading, placeholder }) => {
   const ref = useRef(null);
   const [, drop] = useDrop({
     accept: ItemTypes.CARD,
@@ -53,7 +53,10 @@ const CaseHeading = ({ id, headingName, index, moveHeading }) => {
   return (
     <div ref={ref} style={{ opacity }}>
       <h4>{headingName}</h4>
-      <CaseHeadingDropZone headingName={headingName}></CaseHeadingDropZone>
+      <CaseHeadingDropZone
+        headingName={headingName}
+        placeholder={placeholder}
+      ></CaseHeadingDropZone>
     </div>
   );
 };

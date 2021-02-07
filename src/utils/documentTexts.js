@@ -184,3 +184,12 @@ export let VillageElder = [
     score: cornerstone,
   },
 ];
+
+export const challengePlaceholder =
+  "Drag sentences from documents you want to challenge here";
+
+export const defendPlaceholder =
+  "Drag sentences from documents you want to defend here";
+
+export const focusPlaceholder =
+  "Drag sentences from documents you want to focus on here";
