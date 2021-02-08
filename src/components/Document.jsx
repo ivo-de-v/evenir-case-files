@@ -22,7 +22,9 @@ const Document = ({ handleClose, show, children, location }) => {
             ></DocumentText>
           ))}
         </p>
-        <button onClick={handleClose}>close</button>
+        <button onClick={handleClose} className="document-closebutton">
+          close
+        </button>
       </section>
     </div>
   );

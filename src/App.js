@@ -35,9 +35,9 @@ function App() {
           </Switch>
 
           <Route path="/mydocuments" exact>
-            <div className="centred">
-              <MyDocuments />
-            </div>
+            {/*<div className="centred">*/}
+            <MyDocuments />
+            {/*</div>*/}
           </Route>
           <Route path="/mycase" exact>
             <MyCase />

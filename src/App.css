@@ -67,8 +67,7 @@ button {
 
 .modal-main {
   position: fixed;
-  /*width: 500px;
-  height: 400px;*/
+  width: 30%;
   border: black;
   border-style: double;
   background-color: #f8ecc2;
@@ -81,12 +80,11 @@ button {
 }
 
 .modal-mycase {
-  top: 55%;
+  top: 50%;
   left: 30%;
-  /*transform: translate(-50%, -50%);*/
   -moz-transform: translateX(-55%) translateY(-30%);
   -webkit-transform: translateX(-55%) translateY(-30%);
-  transform: translateX(-55%) translateY(-30%);
+  transform: translateX(-40%) translateY(-30%);
 }
 
 .display-block {
@@ -110,6 +108,9 @@ button {
   width: 50%;
   margin: 0 auto;
   text-align: center;
+}
+
+.document-closebutton {
 }
 
 .map-screen {
@@ -162,6 +163,28 @@ button {
   font-size: 1.5vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/*mydocuments styling*/
+
+.mydocuments-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". title ."
+    ". mydocuments . "
+    ". close .";
+}
+
+.mydocuments-documents {
+  grid-area: mydocuments;
+  text-align: center;
+}
+
+.mydocuments-close {
+  grid-area: close;
+  text-align: center;
 }
 
 /*mycase page styling*/

@@ -14,10 +14,12 @@ class MyDocuments extends Component {
 
   render() {
     return (
-      <div>
-        <h1>My Documents</h1>
-        <p>Read documents used to build your Case</p>
-        <div>
+      <div className="mydocuments-grid">
+        <div className="case-title">
+          <h1>My Documents</h1>
+          <p>Read documents used to build your Case</p>
+        </div>
+        <div className="mydocuments-documents">
           {this.state.documents.map((document) => (
             <DocumentPreview
               preview={document}
@@ -27,7 +29,7 @@ class MyDocuments extends Component {
           ))}
         </div>
 
-        <div>
+        <div className="mydocuments-close">
           {this.props.location.pathname === "/mydocuments" ? (
             <CloseButton></CloseButton>
           ) : null}
