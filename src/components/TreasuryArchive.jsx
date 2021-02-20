@@ -8,12 +8,13 @@ import {
 import { getTime, updateHistory, updateTime } from "../utils/scripts";
 import DocumentPreview from "./DocumentPreview";
 import Footer from "./Footer";
+import { withRouter } from "react-router-dom";
 
 class TreasuryArchive extends Component {
   state = { time: getTime() };
   componentDidMount() {
     updateHistory();
-    updateTime(7, false);
+    updateTime(7, false, this.props.history);
     this.setState({ time: getTime() });
     window.addEventListener("storage", (event) => {
       this.setState({ time: getTime() });
@@ -61,4 +62,4 @@ class TreasuryArchive extends Component {
   }
 }
 
-export default TreasuryArchive;
+export default withRouter(TreasuryArchive);

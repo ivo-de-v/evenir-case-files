@@ -3,12 +3,13 @@ import { getTime, updateHistory, updateTime } from "../utils/scripts";
 import { VillageElder } from "../utils/documentTexts";
 import DocumentPreview from "./DocumentPreview";
 import Footer from "./Footer";
+import { withRouter } from "react-router-dom";
 
 class Village extends Component {
   state = { time: getTime() };
   componentDidMount() {
     updateHistory();
-    updateTime(7, false);
+    updateTime(7, false, this.props.history);
     this.setState({ time: getTime() });
     window.addEventListener("storage", (event) => {
       this.setState({ time: getTime() });
@@ -38,4 +39,4 @@ class Village extends Component {
   }
 }
 
-export default Village;
+export default withRouter(Village);

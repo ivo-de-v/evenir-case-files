@@ -7,12 +7,13 @@ import {
   Letters,
 } from "../utils/documentTexts";
 import Footer from "./Footer";
+import { withRouter } from "react-router-dom";
 
 class RoyalPalace extends Component {
   state = { time: getTime() };
   componentDidMount() {
     updateHistory();
-    updateTime(7, false);
+    updateTime(7, false, this.props.history);
     this.setState({ time: getTime() });
 
     window.addEventListener("storage", (event) => {
@@ -53,4 +54,4 @@ class RoyalPalace extends Component {
   }
 }
 
-export default RoyalPalace;
+export default withRouter(RoyalPalace);

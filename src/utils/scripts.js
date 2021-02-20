@@ -58,13 +58,13 @@ export function getTime() {
   return currentTime;
 }
 
-export function updateTime(spentTime, documentFlag) {
+export function updateTime(spentTime, documentFlag, history) {
   const previousTime = getTime();
   const remainingTime = previousTime - spentTime;
   const justVisited = checkPrevHistory();
 
   if (remainingTime <= 0) {
-    window.location.replace("/mycase");
+    history.push("/mycase");
   } else if (justVisited === true && documentFlag === false) {
     return;
   } else {
