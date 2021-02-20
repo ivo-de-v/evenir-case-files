@@ -63,7 +63,7 @@ export function updateTime(spentTime, documentFlag, history) {
   const remainingTime = previousTime - spentTime;
   const justVisited = checkPrevHistory();
 
-  if (remainingTime <= 0) {
+  if (remainingTime < 0) {
     history.push("/mycase");
   } else if (justVisited === true && documentFlag === false) {
     return;
@@ -131,7 +131,6 @@ export function calculateScore(headings, sliderValue) {
   const headingList = [];
   headingList.push(headings);
   console.log("sliderValue", sliderValue);
-  //TODO something with slidervalue
 
   let totalScore = 0;
   for (let i = 0; i < snippets.length; i++) {
