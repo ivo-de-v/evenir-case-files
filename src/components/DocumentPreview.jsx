@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Document from "./Document";
 import {
   getDocumentTitle,
+  getTime,
   readTextOnly,
   saveTextObject,
   subtractReadingTime,
@@ -13,7 +14,13 @@ class DocumentPreview extends Component {
 
   showDocument = () => {
     this.setState({ show: true });
-    if (this.props.location.pathname !== "/mycase") {
+
+    const remainingTIme = getTime();
+
+    // this prevents the player from going down to negative time by trying to read a document - reading any document takes 2 days
+    if (remainingTIme <= 1) {
+      this.props.history.push("/mycase");
+    } else if (this.props.location.pathname !== "/mycase") {
       subtractReadingTime(this.props.preview);
       saveTextObject(this.props.text);
     }
