@@ -8,7 +8,7 @@ import TimeDisplay from "./TimeDisplay";
 const Footer = (props) => {
   return (
     <>
-      {props.location.pathname === "/places/mapscreen" ? (
+      {props.location.pathname === "/mapscreen" ? (
         <>
           <div className="footer-inner">
             <MyDocumentsButton></MyDocumentsButton>
