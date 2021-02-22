@@ -10,7 +10,6 @@ import {
   defendPlaceholder,
   focusPlaceholder,
 } from "../utils/documentTexts";
-import { getTime } from "../utils/scripts";
 
 const MyCase = () => {
   const [hasButton, setButton] = useState(true);
@@ -38,7 +37,7 @@ const MyCase = () => {
     if (timeFlag) {
       setButton(false);
     }
-  });
+  }, []);
   const [headings, setHeadings] = useState([
     {
       id: 1,

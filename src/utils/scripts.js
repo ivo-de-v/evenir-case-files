@@ -11,7 +11,6 @@ export function getDocumentTitle(textObject) {
   let documentTitle = null;
   if (typeof textObject !== "number") {
     const titleValuePair = Object.values(textObject)[0];
-    console.log("titlevalue pair", titleValuePair);
     documentTitle = titleValuePair["title"];
   }
 

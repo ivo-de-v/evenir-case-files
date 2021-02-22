@@ -47,7 +47,7 @@ const CaseHeadingDropZone = ({ headingName, placeholder }) => {
   if (isActive) {
     backgroundColor = "#fbefd7";
   } else if (canDrop) {
-    backgroundColor = "#f2cc83";
+    backgroundColor = "#93b4f4";
   }
 
   return (

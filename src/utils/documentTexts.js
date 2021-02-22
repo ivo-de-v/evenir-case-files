@@ -148,7 +148,7 @@ export let PopulationCensus = [
   { title: "Population Census 1 YoU - Present" },
   {
     text:
-      "Treasury accountants estimate that Evenir's population began to increase in 9 YoU and has increased exponentially since",
+      "Treasury accountants estimate that Evenir's population began to increase in 9 YoU and has increased exponentially since.",
     score: useful,
   },
 ];

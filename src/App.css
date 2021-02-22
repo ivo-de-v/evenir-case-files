@@ -27,6 +27,10 @@ span {
   font-size: 1.1vw;
 }
 
+span:hover {
+  background-color: #93b4f4;
+}
+
 a {
   text-decoration: none;
   color: #93b4f4;
@@ -116,9 +120,6 @@ button {
   width: 50%;
   margin: 0 auto;
   text-align: center;
-}
-
-.document-closebutton {
 }
 
 .map-screen {
