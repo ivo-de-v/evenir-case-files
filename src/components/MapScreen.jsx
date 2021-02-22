@@ -14,7 +14,7 @@ class MapScreen extends Component {
           <p>It will take you 7 days to travel to any of these locations </p>
         </div>
         <div className="place-documents">
-          <ul>
+          {/*<ul>
             <li>
               <NavLink to="/royalpalace">Go to the Royal Palace</NavLink>
             </li>
@@ -26,7 +26,18 @@ class MapScreen extends Component {
             <li>
               <NavLink to="/village">Go to Callisto's Village</NavLink>
             </li>
-          </ul>
+          </ul>*/}
+          <div>
+            <NavLink to="/royalpalace">Go to the Royal Palace</NavLink>
+          </div>
+          <div>
+            <NavLink to="/treasuryarchives">
+              Go to the Treasury Archives
+            </NavLink>
+          </div>
+          <div>
+            <NavLink to="/village">Go to Callisto's Village</NavLink>
+          </div>
         </div>
         <div className="footer">
           <Footer time={this.state.time} />

@@ -35,7 +35,7 @@ class DocumentPreview extends Component {
   render() {
     return (
       <>
-        <p onClick={this.showDocument}>
+        <p onClick={this.showDocument} className="document-preview-text">
           {getDocumentTitle(this.props.preview)}
         </p>
         <Document
