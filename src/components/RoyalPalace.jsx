@@ -25,7 +25,7 @@ class RoyalPalace extends Component {
     return (
       <div className="place-grid">
         <div className="case-title">
-          <h1 className="title">This is the Treasury Archive</h1>
+          <h1 className="title">This is the Royal Palace</h1>
           <p>It will take you 2 days to read the documents here</p>
         </div>
 
