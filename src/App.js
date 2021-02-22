@@ -20,16 +20,16 @@ function App() {
             <Route path="/" exact>
               <Cutscene />
             </Route>
-            <Route path="/mapscreen">
+            <Route path="/mapscreen" exact>
               <MapScreen />
             </Route>
-            <Route path="/royalpalace">
+            <Route path="/royalpalace" exact>
               <RoyalPalace />
             </Route>
-            <Route path="/treasuryarchives">
+            <Route path="/treasuryarchives" exact>
               <TreasuryArchives />
             </Route>
-            <Route path="/village">
+            <Route path="/village" exact>
               <Village />
             </Route>
           </Switch>
