@@ -31,7 +31,6 @@ class RangeSlider extends Component {
           labels={labels}
           onChange={this.handleChange}
           onChangeComplete={this.onChangeComplete}
-          handleLabel={this.state.currentValue}
         />
       </>
     );
