@@ -16,15 +16,18 @@ function DocumentText({ text, location, score }) {
   });
 
   let spanStyle = false;
+  let spanClassName = "span-documents";
 
   if (location === "/mycase") {
     spanStyle = true;
+    spanClassName = "span-mycase";
   }
 
   return (
     <span
       ref={spanStyle ? drag : null}
       style={{ opacity: isDragging ? 0.5 : 1, cursor: "move" }}
+      className={spanClassName}
     >
       {text}
     </span>

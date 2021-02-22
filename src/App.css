@@ -27,7 +27,7 @@ span {
   font-size: 1.1vw;
 }
 
-span:hover {
+.span-mycase:hover {
   background-color: #93b4f4;
 }
 
@@ -224,6 +224,10 @@ button {
 .case-closebutton {
   grid-area: closebutton;
   text-align: center;
+}
+
+.mycase-heading {
+  padding-bottom: 1.5vw;
 }
 
 .mycase-heading-box {

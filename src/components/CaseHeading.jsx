@@ -51,7 +51,7 @@ const CaseHeading = ({ id, headingName, index, moveHeading, placeholder }) => {
   const opacity = isDragging ? 0 : 1;
   drag(drop(ref));
   return (
-    <div ref={ref} style={{ opacity }}>
+    <div ref={ref} style={{ opacity }} className="mycase-heading">
       <h4>{headingName}</h4>
       <CaseHeadingDropZone
         headingName={headingName}
