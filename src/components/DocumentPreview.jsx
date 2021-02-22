@@ -19,6 +19,8 @@ class DocumentPreview extends Component {
 
     // this prevents the player from going down to negative time by trying to read a document - reading any document takes 2 days
     if (remainingTime <= 1) {
+      //window.dispatchEvent(new Event("timesUp"));
+      sessionStorage.setItem("timeUp", true);
       this.props.history.push("/mycase");
     } else if (this.props.location.pathname !== "/mycase") {
       subtractReadingTime(this.props.preview);

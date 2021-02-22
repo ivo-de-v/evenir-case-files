@@ -11,6 +11,7 @@ export function getDocumentTitle(textObject) {
   let documentTitle = null;
   if (typeof textObject !== "number") {
     const titleValuePair = Object.values(textObject)[0];
+    console.log("titlevalue pair", titleValuePair);
     documentTitle = titleValuePair["title"];
   }
 
@@ -28,7 +29,12 @@ export function getDocumentsFromStorage() {
   for (let i = 0; i < sessionStorage.length; i++) {
     const key = sessionStorage.key(i);
 
-    if (key.charAt(0) !== "{" && key !== "time" && key !== "history") {
+    if (
+      key.charAt(0) !== "{" &&
+      key !== "time" &&
+      key !== "history" &&
+      key !== "timeUp"
+    ) {
       const savedDocument = JSON.parse(sessionStorage.getItem(key));
 
       listofDocuments.push(savedDocument);
@@ -64,6 +70,9 @@ export function updateTime(spentTime, documentFlag, history) {
   const justVisited = checkPrevHistory();
 
   if (remainingTime < 0) {
+    // if performing an action would bring you to negative time, you must use the documents you have to solve the case
+    //window.dispatchEvent(new Event("timesUp"));
+    sessionStorage.setItem("timeUp", true);
     history.push("/mycase");
   } else if (justVisited === true && documentFlag === false) {
     return;

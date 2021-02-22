@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import update from "immutability-helper";
 import CaseHeading from "./CaseHeading";
 import CloseButton from "./CloseButton";
@@ -10,8 +10,35 @@ import {
   defendPlaceholder,
   focusPlaceholder,
 } from "../utils/documentTexts";
+import { getTime } from "../utils/scripts";
 
 const MyCase = () => {
+  const [hasButton, setButton] = useState(true);
+
+  /* attempt 1 - this works as intended but sometimes you run out of time even when you have > 0 ie 1
+  useEffect(() => {
+    console.log("this fired before if ");
+    console.log("getTime", getTime());
+    if (getTime() <= 0) {
+      setButton(false);
+      console.log("this fired in if");
+    }
+  }, []);*/
+
+  /* attempt 2 - this does nothing, probably because the event is dispatched before this component ever mounts
+  useEffect(() => {
+    window.addEventListener("timesUp", (event) => {
+      console.log("we are in here");
+      setButton(false);
+    });
+  }, []);*/
+
+  useEffect(() => {
+    const timeFlag = sessionStorage.getItem("timeUp");
+    if (timeFlag) {
+      setButton(false);
+    }
+  });
   const [headings, setHeadings] = useState([
     {
       id: 1,
@@ -68,9 +95,11 @@ const MyCase = () => {
         <PresentButton headings={headings} />
       </div>
 
-      <div className="case-closebutton">
-        <CloseButton />
-      </div>
+      {hasButton ? (
+        <div className="case-closebutton">
+          <CloseButton />
+        </div>
+      ) : null}
     </div>
   );
 };
