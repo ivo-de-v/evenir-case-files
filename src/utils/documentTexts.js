@@ -7,7 +7,7 @@ export const cutsceneText1 = {
   number: 1,
   text: `Sixty-six years ago, the Kingdom of Evenir trembled in the grip of the evil witch Callisto. In her wake, crops ceased to grow, villagers vanished into the night, and fearsome monsters wreaked destruction on the land. 
   
-  Evenir’s great king, Richard the Cleanser, in his mercy, sought to bargain with the witch. His envoy was Symon, the kingdom’s most honourable knight. But the Callisto cursed Symon, and Evenir mourned his loss. 
+  Evenir’s great king, Richard the Cleanser, in his mercy, sought to bargain with the witch. His envoy was Symon, the kingdom’s most honourable knight. But Callisto cursed Symon, and Evenir mourned his loss. 
 
  Having no choice, king Richard summoned his army, and waged a fierce battle against the witch. Callisto could not be killed, but she was sealed away, so that she could never harm the kingdom again. 
  
@@ -39,12 +39,12 @@ export let KingsOfEvenir = [
   },
   {
     text:
-      "In what is now called the province of Ilsidor, there came rumours of terrible events. Food would cease grow. Fearsome beasts appeared seemingly out of nowhere to wreak devastation. Townsfolk mysteriously vanished in the night, never to return...",
+      "In what is now called the province of Ilsidor, there came rumours of terrible events. Food would cease grow. Fearsome beasts appeared seemingly out of nowhere to wreak devastation. Townsfolk mysteriously vanished in the night, never to return... ",
     score: worthless,
   },
   {
     text:
-      "After the fall of Symon, King Richard was faced with no choice. The Mage Council was refusing to cooperate, so the King gathered the rest of his knights and travelled to Ilsidor.",
+      "After the fall of Symon, King Richard was faced with no choice. The Mage Council was refusing to cooperate, so the King gathered the rest of his knights and travelled to Ilsidor. ",
     score: worthless,
   },
   {
@@ -157,11 +157,11 @@ export let PopulationCensusRegional = [
   { title: "Population Census 1 YoU - Present (Fief Breakdown)" },
   {
     text:
-      "Evenir's border fiefdoms have increased their population more rapidly than any other.",
+      "Evenir's border fiefdoms have increased their population more rapidly than any other. ",
     score: useful,
   },
   {
-    text: "The fiefodm of Hesales has lost population after 9 YoU",
+    text: "The fiefodm of Hesales has lost population after 9 YoU. ",
     score: useful,
   },
   {
@@ -175,7 +175,7 @@ export let VillageElder = [
   { title: "Speak to the Village Elder" },
   {
     text:
-      "Ah yes, the witch Callisto, how could one forget. It was a particularly cold winter the year the witch was sealed.  Everyone was afraid at that point, kids would disappear, and other terrible things like that.",
+      "Ah yes, the witch Callisto, how could one forget. It was a particularly cold winter the year the witch was sealed. Everyone was afraid at that point, kids would disappear, and other terrible things like that. ",
     score: useful,
   },
   {

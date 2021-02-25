@@ -28,7 +28,10 @@ span {
 }
 
 .span-mycase:hover {
-  background-color: #93b4f4;
+  border: solid;
+  border-width: thin;
+  border-color: #93b4f4;
+  /*background-color: #93b4f4;*/
 }
 
 a {

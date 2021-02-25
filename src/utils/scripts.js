@@ -138,7 +138,6 @@ export function calculateScore(headings, sliderValue) {
   const snippets = getTextFromStorage();
   const headingList = [];
   headingList.push(headings);
-  console.log("sliderValue", sliderValue);
 
   let totalScore = 0;
   for (let i = 0; i < snippets.length; i++) {
