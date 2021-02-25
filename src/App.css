@@ -186,9 +186,9 @@ button {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    ". title ."
-    ". mydocuments . "
-    ". close .";
+    "title title title"
+    "mydocuments mydocuments mydocuments "
+    "close close close";
 }
 
 .mydocuments-documents {
