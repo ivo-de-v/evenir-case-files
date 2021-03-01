@@ -1,6 +1,7 @@
 import React from "react";
 import { ItemTypes } from "../utils/documentTexts";
 import { useDrag } from "react-dnd";
+import { withRouter } from "react-router-dom";
 
 function DocumentText({ text, location, score }) {
   const [{ isDragging }, drag] = useDrag({
@@ -18,7 +19,7 @@ function DocumentText({ text, location, score }) {
   let spanStyle = false;
   let spanClassName = "span-documents";
 
-  if (location === "/mycase") {
+  if (location.pathname === "/mycase") {
     spanStyle = true;
     spanClassName = "span-mycase";
   }
@@ -34,4 +35,4 @@ function DocumentText({ text, location, score }) {
   );
 }
 
-export default DocumentText;
+export default withRouter(DocumentText);

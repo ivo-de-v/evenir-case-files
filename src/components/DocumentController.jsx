@@ -3,7 +3,6 @@ import DocumentPreview from "./DocumentPreview";
 import Document from "./Document";
 
 const DocumentController = ({ listOfDocuments }) => {
-  console.log("listofdocuments", listOfDocuments);
   const [preview, hidePreview] = useState(true);
   const [document, showDocument] = useState(listOfDocuments[0]);
 
