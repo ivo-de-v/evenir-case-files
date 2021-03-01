@@ -16,7 +16,7 @@ const CaseHeadingArea = () => {
       placeholder: challengePlaceholder,
     },
     { id: 2, headingName: "Defend", placeholder: defendPlaceholder },
-    { id: 3, headingName: "Focus", placeholder: focusPlaceholder },
+    { id: 3, headingName: "Emphasize", placeholder: focusPlaceholder },
   ]);
 
   const moveHeading = useCallback(
@@ -34,6 +34,7 @@ const CaseHeadingArea = () => {
     },
     [headings]
   );
+
   const renderHeading = (heading, index) => {
     return (
       <CaseHeading

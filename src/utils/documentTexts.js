@@ -186,13 +186,13 @@ export let VillageElder = [
 ];
 
 export const challengePlaceholder =
-  "Drag sentences from documents you want to challenge here";
+  "Drop sentences here if you think your argument challenges them";
 
 export const defendPlaceholder =
-  "Drag sentences from documents you want to defend here";
+  "Drop sentences here if you think your argument supports them";
 
 export const focusPlaceholder =
-  "Drag sentences from documents you want to focus on here";
+  "Drop sentences here if you think they're particularly important to your argument";
 
 export const unhappyCouncilText =
   "The Council is not pleased with the quality of your case. There are not enough relevant points for them to make a convincing argument to the King. Try again.";
