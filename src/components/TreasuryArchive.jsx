@@ -6,9 +6,9 @@ import {
   PopulationCensusRegional,
 } from "../utils/documentTexts";
 import { getTime, updateHistory, updateTime } from "../utils/scripts";
-import DocumentPreview from "./DocumentPreview";
 import Footer from "./Footer";
 import { withRouter } from "react-router-dom";
+import DocumentController from "./DocumentController";
 
 class TreasuryArchive extends Component {
   state = { time: getTime() };
@@ -29,30 +29,14 @@ class TreasuryArchive extends Component {
         </div>
 
         <div className="place-documents">
-          <div className="document-preview">
-            <DocumentPreview
-              preview={economicReports}
-              text={economicReports}
-            ></DocumentPreview>
-          </div>
-          <div className="document-preview">
-            <DocumentPreview
-              preview={economicReportsRegional}
-              text={economicReportsRegional}
-            ></DocumentPreview>
-          </div>
-          <div className="document-preview">
-            <DocumentPreview
-              preview={PopulationCensus}
-              text={PopulationCensus}
-            ></DocumentPreview>
-          </div>
-          <div className="document-preview">
-            <DocumentPreview
-              preview={PopulationCensusRegional}
-              text={PopulationCensusRegional}
-            ></DocumentPreview>
-          </div>
+          <DocumentController
+            listOfDocuments={[
+              economicReports,
+              economicReportsRegional,
+              PopulationCensus,
+              PopulationCensusRegional,
+            ]}
+          ></DocumentController>
         </div>
         <div className="footer">
           <Footer time={this.state.time} />

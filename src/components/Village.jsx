@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { getTime, updateHistory, updateTime } from "../utils/scripts";
 import { VillageElder } from "../utils/documentTexts";
-import DocumentPreview from "./DocumentPreview";
 import Footer from "./Footer";
 import { withRouter } from "react-router-dom";
+import DocumentController from "./DocumentController";
 
 class Village extends Component {
   state = { time: getTime() };
@@ -25,12 +25,12 @@ class Village extends Component {
 
         <div className="place-documents">
           <div className="document-preview">
-            <DocumentPreview
-              preview={VillageElder}
-              text={VillageElder}
-            ></DocumentPreview>
+            <DocumentController
+              listOfDocuments={[VillageElder]}
+            ></DocumentController>
           </div>
         </div>
+
         <div className="footer">
           <Footer time={this.state.time} />
         </div>

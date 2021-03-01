@@ -1,52 +1,38 @@
-import React, { Component } from "react";
-import Document from "./Document";
+import React from "react";
 import {
   getDocumentTitle,
   getTime,
-  readTextOnly,
   saveTextObject,
   subtractReadingTime,
 } from "../utils/scripts";
-import { withRouter } from "react-router-dom";
+import { useHistory, withRouter } from "react-router-dom";
 
-class DocumentPreview extends Component {
-  state = { show: false };
-
-  showDocument = () => {
-    this.setState({ show: true });
-
+const DocumentPreview2 = ({
+  document,
+  hidePreview,
+  showDocument,
+  location,
+}) => {
+  const history = useHistory();
+  const hidePreviewAndShowDocument = () => {
+    hidePreview(false);
+    showDocument(document);
     const remainingTime = getTime();
 
     // this prevents the player from going down to negative time by trying to read a document - reading any document takes 2 days
     if (remainingTime <= 1) {
-      //window.dispatchEvent(new Event("timesUp"));
       sessionStorage.setItem("timeUp", true);
-      this.props.history.push("/mycase");
-    } else if (this.props.location.pathname !== "/mycase") {
-      subtractReadingTime(this.props.preview);
-      saveTextObject(this.props.text);
+      history.push("/mycase");
+    } else if (location.pathname !== "/mycase") {
+      subtractReadingTime(document);
+      saveTextObject(document);
     }
   };
+  return (
+    <p className="document-preview-text" onClick={hidePreviewAndShowDocument}>
+      {getDocumentTitle(document)}
+    </p>
+  );
+};
 
-  hideDocument = () => {
-    this.setState({ show: false });
-  };
-
-  render() {
-    return (
-      <>
-        <p onClick={this.showDocument} className="document-preview-text">
-          {getDocumentTitle(this.props.preview)}
-        </p>
-        <Document
-          show={this.state.show}
-          handleClose={this.hideDocument}
-          children={readTextOnly(this.props.text)}
-          location={this.props.location.pathname}
-        ></Document>
-      </>
-    );
-  }
-}
-
-export default withRouter(DocumentPreview);
+export default withRouter(DocumentPreview2);

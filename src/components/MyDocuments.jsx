@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import CloseButton from "./CloseButton";
-import { getDocumentsFromStorage, getDocumentTitle } from "../utils/scripts";
+import { getDocumentsFromStorage } from "../utils/scripts";
 import { withRouter } from "react-router-dom";
-import DocumentPreview from "./DocumentPreview";
+import DocumentController from "./DocumentController";
 
 class MyDocuments extends Component {
   state = { documents: [] };
@@ -10,6 +10,7 @@ class MyDocuments extends Component {
   componentDidMount() {
     const retreivedDocuments = getDocumentsFromStorage();
     this.setState({ documents: retreivedDocuments });
+    console.log("documents", this.state.documents);
   }
 
   render() {
@@ -20,13 +21,9 @@ class MyDocuments extends Component {
           <p>Read documents used to build your Case</p>
         </div>
         <div className="mydocuments-documents">
-          {this.state.documents.map((document) => (
-            <DocumentPreview
-              preview={document}
-              text={document}
-              key={getDocumentTitle(document)}
-            ></DocumentPreview>
-          ))}
+          <DocumentController
+            listOfDocuments={this.state.documents}
+          ></DocumentController>
         </div>
 
         <div className="mydocuments-close">

@@ -78,7 +78,7 @@ export let KingdomOfEvenir = [
   },
   {
     text:
-      "And it was so that King Richard became celebrated as King Richard, the Cleanser.",
+      "And it was so that King Richard became celebrated as King Richard, the Cleanser. ",
     score: worthless,
   },
   {

@@ -74,7 +74,7 @@ button {
   grid-area: button;
   text-align: center;
 }
-/*modal styling*/
+/*document styling*/
 
 .document-preview-text {
   color: #93b4f4;
@@ -82,34 +82,10 @@ button {
   cursor: pointer;
 }
 
-.modal-main {
-  position: fixed;
-  width: 30%;
+.document-main {
   border: black;
   border-style: double;
   background-color: #f8ecc2;
-}
-
-.modal-mydocuments {
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.modal-mycase {
-  top: 50%;
-  left: 30%;
-  -moz-transform: translateX(-55%) translateY(-30%);
-  -webkit-transform: translateX(-55%) translateY(-30%);
-  transform: translateX(-40%) translateY(-30%);
-}
-
-.display-block {
-  display: block;
-}
-
-.display-none {
-  display: none;
 }
 
 .centred {
@@ -201,6 +177,27 @@ button {
   text-align: center;
 }
 
+/*headingarea styling*/
+
+.heading-area-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title title title"
+    ". headings ."
+    ". present .";
+}
+
+.heading-area-headings {
+  grid-area: headings;
+}
+
+.heading-area-present {
+  grid-area: present;
+  padding-top: 2vw;
+}
+
 /*mycase page styling*/
 
 .case-grid {
@@ -209,7 +206,7 @@ button {
   grid-template-rows: auto;
   grid-template-areas:
     ". title title title . "
-    ". documents .  headings . "
+    "documents documents headings  headings headings "
     ". . closebutton . .";
 }
 
@@ -231,9 +228,9 @@ button {
   text-align: center;
 }
 
-.mycase-heading {
+/*.mycase-heading {
   padding-bottom: 1.5vw;
-}
+}*/
 
 .mycase-heading-box {
   min-width: 250px;

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import DocumentPreview from "./DocumentPreview";
 import { getTime, updateHistory, updateTime } from "../utils/scripts";
 import {
   KingdomOfEvenir,
@@ -8,6 +7,7 @@ import {
 } from "../utils/documentTexts";
 import Footer from "./Footer";
 import { withRouter } from "react-router-dom";
+import DocumentController from "./DocumentController";
 
 class RoyalPalace extends Component {
   state = { time: getTime() };
@@ -30,21 +30,9 @@ class RoyalPalace extends Component {
         </div>
 
         <div className="place-documents">
-          <div className="document-preview">
-            <DocumentPreview
-              preview={KingsOfEvenir}
-              text={KingsOfEvenir}
-            ></DocumentPreview>
-          </div>
-          <div className="document-preview">
-            <DocumentPreview
-              preview={KingdomOfEvenir}
-              text={KingdomOfEvenir}
-            ></DocumentPreview>
-          </div>
-          <div className="document-preview">
-            <DocumentPreview preview={Letters} text={Letters}></DocumentPreview>
-          </div>
+          <DocumentController
+            listOfDocuments={[KingdomOfEvenir, KingsOfEvenir, Letters]}
+          ></DocumentController>
         </div>
         <div className="footer">
           <Footer time={this.state.time} />
