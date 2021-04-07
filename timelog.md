@@ -1,16 +1,11 @@
 # Timelog
 
-- Project Title: A Serious Historical Game
+- Project Title: The Evenir Case Files: A Text-Based Game Designed to Develop Historical Thought
 - Student Name: Ivo de Vero
 - Student ID: 2310555D
 - Supervisor: Matt Barr
 
-## Guidance
-
-- This file contains the time log for your project. It will be submitted along with your final dissertation.
-- **YOU MUST KEEP THIS UP TO DATE AND UNDER VERSION CONTROL.**
-- This timelog should be filled out honestly, regularly (daily) and accurately. It is for _your_ benefit.
-- Follow the structure provided, grouping time by weeks. Quantise time to the half hour.
+time is quantised to the half hour. "hr" stands for hour.
 
 ## Week 1
 
