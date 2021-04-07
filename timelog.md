@@ -454,4 +454,4 @@ _1.5hr_ running evaluation
 
 ### Wed
 
--_0.5hr_ redrafting -_1hr_ administrative work
+-_0.5hr_ redrafting -_1.5hr_ administrative work

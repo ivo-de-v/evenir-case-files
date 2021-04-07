@@ -32,6 +32,11 @@ span {
   border-width: thin;
   border-color: #93b4f4;
   /*background-color: #93b4f4;*/
+  cursor: move;
+}
+
+.span-documents:hover {
+  cursor: text;
 }
 
 a {

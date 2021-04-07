@@ -27,7 +27,7 @@ function DocumentText({ text, location, score }) {
   return (
     <span
       ref={spanStyle ? drag : null}
-      style={{ opacity: isDragging ? 0.5 : 1, cursor: "move" }}
+      style={{ opacity: isDragging ? 0.5 : 1 }}
       className={spanClassName}
     >
       {text}
