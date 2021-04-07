@@ -9,7 +9,7 @@ const Document = ({ text, hidePreview }) => {
           {text.map((entry) => (
             <DocumentText
               text={entry.text}
-              key={Math.random() /* i'll think of something better later*/}
+              key={Math.random()}
               score={entry.score}
             ></DocumentText>
           ))}
