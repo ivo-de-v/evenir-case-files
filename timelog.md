@@ -1,16 +1,11 @@
 # Timelog
 
-- Project Title: A Serious Historical Game
+- Project Title: The Evenir Case Files: A Text-Based Game Designed to Develop Historical Thought
 - Student Name: Ivo de Vero
 - Student ID: 2310555D
 - Supervisor: Matt Barr
 
-## Guidance
-
-- This file contains the time log for your project. It will be submitted along with your final dissertation.
-- **YOU MUST KEEP THIS UP TO DATE AND UNDER VERSION CONTROL.**
-- This timelog should be filled out honestly, regularly (daily) and accurately. It is for _your_ benefit.
-- Follow the structure provided, grouping time by weeks. Quantise time to the half hour.
+time is quantised to the half hour. "hr" stands for hour.
 
 ## Week 1
 
@@ -166,13 +161,14 @@
 ## Week 12
 
 ### 8 Dec 2020
-- _1.5 hours_ React tutorial
-- _4 hours_ attending training meetings
--_0.5 hours_ meeting with supervisor
 
-## w/c 21 Dec
+- _1.5 hours_ React tutorial
+- _4 hours_ attending training meetings -_0.5 hours_ meeting with supervisor
+
+## w/c 21 Dec (christmas break)
 
 ### Mon
+
 -_3.5hr_ Reaact tutorial
 
 ### Tues
@@ -184,25 +180,31 @@
 -_3.5hr_ building product
 
 ### Sun
+
 -_2hr_ building product
 
-## w/c 28 Dec
+## w/c 28 Dec (christmas break)
 
 ### Mon
+
 -_5.5hr_ building product
 
 ### Tues
+
 -_5.5hr_ building product
 
 ### Wed
+
 -_4.5hr_ building product
 
-### Thurs 
+### Thurs
+
 -_3.5hr_ building product
 
-## w/c 1st Jan
+## w/c 1st Jan (christmas break)
 
 ### Fri
+
 -_2hr_ building product
 
 ### Sun
@@ -210,151 +212,246 @@
 -_2.5hr_ building product
 
 ### Mon
+
 -_3.5hr_ building product
 
 ### Tues
+
 -_3.5hr_ building product
 
 ### Wed
+
 -_3.5hr_ buulding product
 
 ### Thurs
+
 -_1hr_ building product
 
 ### Fri
+
 -_1.5hr_ building product
 
 ## Week 13
+
 ### Fri
+
 -_1.5hr_ building product
 
 ### Sun
+
 -_4hr_ building product
 
 ## Week 14
+
 ### Mon
--_3.5hr_ building product
--_0.5hr_ meeting supervispr
+
+-_3.5hr_ building product -_0.5hr_ meeting supervispr
 
 ### Thurs
+
 -_3.5hr_ building product
 
 ### Fri
--_2hr_ building product
 
-## Week 14
-### Mon
--_2.5hr_ building product
-### Sat
--_6.5hr_ building product
-### Sun
--_4.5hr_ building product
+-_2hr_ building product
 
 ## Week 15
+
 ### Mon
--_4.5hr_ building product
-### Tues
--_1hr_ building product
-### Wed
--_4.5hr_ building product
-### Thurs
--_3hr_ building product
-### Fri
+
 -_2.5hr_ building product
--_0.5hr_ meeting supervisor
+
+### Sat
+
+-_6.5hr_ building product
+
 ### Sun
--_4hr_ building product
+
+-_4.5hr_ building product
 
 ## Week 16
+
 ### Mon
--_1hr_ running evaluation
+
+-_4.5hr_ building product
+
+### Tues
+
 -_1hr_ building product
+
 ### Wed
--_1hr_ running evaluation 
+
+-_4.5hr_ building product
+
 ### Thurs
--_2hr_ working on report outline
-### Sat
--_2hr_ building product
+
+-_3hr_ building product
+
+### Fri
+
+-_2.5hr_ building product -_0.5hr_ meeting supervisor
+
+### Sun
+
+-_4hr_ building product
 
 ## Week 17
+
 ### Mon
--_3hr_ building product
--_1hr_ running evaluation 
+
+-_1hr_ running evaluation -_1hr_ building product
+
 ### Wed
--_1hr_ building product
--_1hr_ running evaluation 
+
+-_1hr_ running evaluation
+
 ### Thurs
--_3.hr_ building product
-### Fri
--_0.5hr_ meeting with supervisor
--_1hr_ working on report outline
-### Sun
--_0.5hr_ building product
+
+-_2hr_ working on report outline
+
+### Sat
+
+-_2hr_ building product
 
 ## Week 18
+
 ### Mon
--_4hr_ building product
+
+-_3hr_ building product -_1hr_ running evaluation
+
 ### Wed
--_1hr_ designing final evaluation
-_1.5hr_ running evaluation 
+
+-_1hr_ building product -_1hr_ running evaluation
+
+### Thurs
+
+-_3.hr_ building product
+
+### Fri
+
+-_0.5hr_ meeting with supervisor -_1hr_ working on report outline
+
+### Sun
+
+-_0.5hr_ building product
 
 ## Week 19
-### Tue
--_1hr_ running final evaluations
+
+### Mon
+
+-_4hr_ building product
+
 ### Wed
--_0.5hr_ working on report
--_0.5hr_ running final evaluation
--_0.5hr_ writing
-### Thurs
--_1hr_ cleaning transcript
--_2hr_ running final evaluations 
-### Fri
--_1.5hr_ reading
--_0.5hr_ running final evaluation 
--_0.5hr_ meeting supervisor
--_2hr_ working on report outline
-### Sat
--_0.5hr_ reading
-### Sun
--_1hr_ reading
--_1hr_ working on report outline
+
+-_1hr_ designing final evaluation
+_1.5hr_ running evaluation
 
 ## Week 20
-### Mon
--_2hr_ writing report
+
 ### Tue
--_0.5hr_ working on report outline
--_1hr_ writing report
+
+-_1hr_ running final evaluations
+
+### Wed
+
+-_0.5hr_ working on report -_0.5hr_ running final evaluation -_0.5hr_ writing
+
+### Thurs
+
+-_1hr_ cleaning transcript -_2hr_ running final evaluations
+
+### Fri
+
+-_1.5hr_ reading -_0.5hr_ running final evaluation -_0.5hr_ meeting supervisor -_2hr_ working on report outline
+
+### Sat
+
+-_0.5hr_ reading
+
 ### Sun
--_1.5hr_ working on report outline
--_2hr_ writing dissertation report
+
+-_1hr_ reading -_1hr_ working on report outline
 
 ## Week 21
+
 ### Mon
--_2hr_ writing report
-### Tue
--_0.5hr_ writing report
-### Wed
--_0.5hr_ formatting
--_0.5hr_ working on report outline
-### Thurs
--_1.5hr_ working on dissertation report
-### Fri
--_1.5hr_ writing report
--_1hr_ formatting
-### Sat 
+
 -_2hr_ writing report
 
-## Week 22
-### Mon
--_0.5hr_ writing
--_0.5hr_ formatting
 ### Tue
--_4.5hr_ cleaning transcripts
+
+-_0.5hr_ working on report outline -_1hr_ writing report
+
+### Sun
+
+-_1.5hr_ working on report outline -_2hr_ writing dissertation report
+
+## Week 22
+
+### Mon
+
+-_2hr_ writing report
+
+### Tue
+
+-_0.5hr_ writing report
+
 ### Wed
--_1hr_ cleaning transcripts
--_2hr_ analysing transcripts
--_1.5hr_ structuring dissertation report
+
+-_0.5hr_ formatting -_0.5hr_ working on report outline
+
 ### Thurs
--_0.5hr_ structuring dissertation report
--_0.5hr_ updating timelog
+
+-_1.5hr_ working on dissertation report
+
+### Fri
+
+-_1.5hr_ writing report -_1hr_ formatting
+
+### Sat
+
+-_2hr_ writing report
+
+## Week 23
+
+### Mon
+
+-_0.5hr_ writing -_0.5hr_ formatting
+
+### Tue
+
+-_4.5hr_ cleaning transcripts
+
+### Wed
+
+-_1hr_ cleaning transcripts -_2hr_ analysing transcripts -_1.5hr_ structuring dissertation report
+
+### Thurs
+
+-_0.5hr_ structuring dissertation report -_0.5hr_ updating timelog
+
+### Fri
+
+-_2.5hr_ writing -_1hr_ working on report outline
+
+### Sat
+
+-_4.5hr_ writing
+
+### Sun
+
+-_1.5hr_ redrafting
+
+## Week 24
+
+### Mon
+
+-_3.5hr_ redrafting
+
+### Tue
+
+-_2.5hr_ redrafting
+
+### Wed
+
+-_0.5hr_ redrafting -_1hr_ administrative work
