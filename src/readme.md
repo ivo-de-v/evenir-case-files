@@ -19,5 +19,5 @@ You can also build the project locally
 
 * clone the github repository
 * cd into src
-* npm i
-* npm start
+* run npm i
+* run npm start
