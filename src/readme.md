@@ -37,7 +37,7 @@ Drag and drop functionality was implemented with the react-dnd library. In parti
 
 ### Build steps
 
-- clone the github repository
+- cd into the project folder (ie after having opened the submitted 2310555D.zip file)
 - cd into src
 - run npm i
 - run npm start
