@@ -17,7 +17,7 @@ The project is hosted online at http://evenircasefiles.surge.sh/. This webpage m
 
 You can also build the project locally
 
-* cd into the project folder (ie after having opened the submitted 2310555D.zip file)
+* clone the github repository
 * cd into src
 * run npm i
 * run npm start

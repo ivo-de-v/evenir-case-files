@@ -1,11 +1,16 @@
 # Timelog
 
-- Project Title: The Evenir Case Files: A Text-Based Game Designed to Develop Historical Thought
+- Project Title: A Serious Historical Game
 - Student Name: Ivo de Vero
 - Student ID: 2310555D
 - Supervisor: Matt Barr
 
-time is quantised to the half hour. "hr" stands for hour.
+## Guidance
+
+- This file contains the time log for your project. It will be submitted along with your final dissertation.
+- **YOU MUST KEEP THIS UP TO DATE AND UNDER VERSION CONTROL.**
+- This timelog should be filled out honestly, regularly (daily) and accurately. It is for _your_ benefit.
+- Follow the structure provided, grouping time by weeks. Quantise time to the half hour.
 
 ## Week 1
 
@@ -165,7 +170,7 @@ time is quantised to the half hour. "hr" stands for hour.
 - _4 hours_ attending training meetings
 -_0.5 hours_ meeting with supervisor
 
-## w/c 21 Dec (christmas break)
+## w/c 21 Dec
 
 ### Mon
 -_3.5hr_ Reaact tutorial
@@ -181,7 +186,7 @@ time is quantised to the half hour. "hr" stands for hour.
 ### Sun
 -_2hr_ building product
 
-## w/c 28 Dec (christmas break)
+## w/c 28 Dec
 
 ### Mon
 -_5.5hr_ building product
@@ -195,7 +200,7 @@ time is quantised to the half hour. "hr" stands for hour.
 ### Thurs 
 -_3.5hr_ building product
 
-## w/c 1st Jan (christmas break)
+## w/c 1st Jan
 
 ### Fri
 -_2hr_ building product
@@ -237,7 +242,7 @@ time is quantised to the half hour. "hr" stands for hour.
 ### Fri
 -_2hr_ building product
 
-## Week 15
+## Week 14
 ### Mon
 -_2.5hr_ building product
 ### Sat
@@ -245,7 +250,7 @@ time is quantised to the half hour. "hr" stands for hour.
 ### Sun
 -_4.5hr_ building product
 
-## Week 16
+## Week 15
 ### Mon
 -_4.5hr_ building product
 ### Tues
@@ -260,7 +265,7 @@ time is quantised to the half hour. "hr" stands for hour.
 ### Sun
 -_4hr_ building product
 
-## Week 17
+## Week 16
 ### Mon
 -_1hr_ running evaluation
 -_1hr_ building product
@@ -271,7 +276,7 @@ time is quantised to the half hour. "hr" stands for hour.
 ### Sat
 -_2hr_ building product
 
-## Week 18
+## Week 17
 ### Mon
 -_3hr_ building product
 -_1hr_ running evaluation 
@@ -286,14 +291,14 @@ time is quantised to the half hour. "hr" stands for hour.
 ### Sun
 -_0.5hr_ building product
 
-## Week 19
+## Week 18
 ### Mon
 -_4hr_ building product
 ### Wed
 -_1hr_ designing final evaluation
 _1.5hr_ running evaluation 
 
-## Week 20
+## Week 19
 ### Tue
 -_1hr_ running final evaluations
 ### Wed
@@ -314,7 +319,7 @@ _1.5hr_ running evaluation
 -_1hr_ reading
 -_1hr_ working on report outline
 
-## Week 21
+## Week 20
 ### Mon
 -_2hr_ writing report
 ### Tue
@@ -324,7 +329,7 @@ _1.5hr_ running evaluation
 -_1.5hr_ working on report outline
 -_2hr_ writing dissertation report
 
-## Week 22
+## Week 21
 ### Mon
 -_2hr_ writing report
 ### Tue
@@ -340,7 +345,7 @@ _1.5hr_ running evaluation
 ### Sat 
 -_2hr_ writing report
 
-## Week 23
+## Week 22
 ### Mon
 -_0.5hr_ writing
 -_0.5hr_ formatting
@@ -353,19 +358,3 @@ _1.5hr_ running evaluation
 ### Thurs
 -_0.5hr_ structuring dissertation report
 -_0.5hr_ updating timelog
-### Fri
--_2.5hr_ writing
--_1hr_  working on report outline
-### Sat
--_4.5hr_ writing
-### Sun
--_1.5hr_ redrafting
-
-## Week 24
-### Mon
--_3.5hr_ redrafting
-### Tue
--_2.5hr_ redrafting
-### Wed
--_0.5hr_ redrafting
--_1hr_ administrative work
