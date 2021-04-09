@@ -455,3 +455,11 @@ _1.5hr_ running evaluation
 ### Wed
 
 -_0.5hr_ redrafting -_1.5hr_ administrative work
+
+### Thu
+
+-_4.5hr_ preparing presentation
+
+### Fri
+
+-_0.5hr_ redrafting -_0.5hr_ preparing presentation
